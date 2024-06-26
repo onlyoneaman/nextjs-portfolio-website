@@ -9,7 +9,7 @@ const BlogPostList = ({ posts }) => {
 
   return (
     <div
-      className="min-w-full space-y-6"
+      className="mx-auto w-[80%] space-y-6"
     >
       <ContainerTitle
         title="Pensieve"

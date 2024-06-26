@@ -7,7 +7,7 @@ const HomePage = () => {
 
   return (
     <div
-      className="space-y-4"
+      className="w-[80%] mx-auto space-y-4"
     >
       <ContainerTitle
         title="Hello, I'm Aman"

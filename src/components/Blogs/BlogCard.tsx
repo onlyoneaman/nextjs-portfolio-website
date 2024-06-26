@@ -9,7 +9,7 @@ const BlogCard = ({post}) => {
         <CardHeader
           className="flex flex-row p-2 gap-2"
         >
-          <div className="w-20 h-20 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md mb-4"></div>
+          <div className="min-w-20 h-20 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md mb-4"></div>
           <div
             className="flex flex-col gap-1"
           >
