@@ -16,7 +16,7 @@ const AvatarBox = () => {
       <Avatar>
         <AvatarImage
           alt="User Image"
-          src={"/user.jpg"}
+          src={"/images/user.jpg"}
         />
         <AvatarFallback>
           CN
