@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import BlogCard from "@/components/Blogs/BlogCard";
 
 const BlogPostList = ({ posts }) => {
   if (!posts || posts.length === 0) {
@@ -8,22 +7,16 @@ const BlogPostList = ({ posts }) => {
   }
 
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post) => (
-        <Card key={post.slug} className="flex flex-col">
-          <CardHeader>
-            <CardTitle>{post.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">{post.date}</p>
-          </CardContent>
-          <CardFooter className="mt-auto">
-            <Link href={`/blogs/${post.slug}`} className="text-primary hover:underline">
-              Read more
-            </Link>
-          </CardFooter>
-        </Card>
-      ))}
+    <div
+      className="min-w-full"
+    >
+      <div
+        className="flex min-w-full flex-row gap-2 flex-wrap"
+      >
+        {posts.map((post) => (
+          <BlogCard key={post.slug} post={post} />
+        ))}
+      </div>
     </div>
   );
 };
