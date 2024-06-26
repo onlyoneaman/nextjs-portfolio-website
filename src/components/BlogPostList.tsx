@@ -18,7 +18,7 @@ const BlogPostList = ({ posts }) => {
             <p className="text-sm text-muted-foreground">{post.date}</p>
           </CardContent>
           <CardFooter className="mt-auto">
-            <Link href={`/blog/${post.slug}`} className="text-primary hover:underline">
+            <Link href={`/blogs/${post.slug}`} className="text-primary hover:underline">
               Read more
             </Link>
           </CardFooter>

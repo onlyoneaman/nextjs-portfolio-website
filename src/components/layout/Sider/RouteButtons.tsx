@@ -9,6 +9,10 @@ const RouteButtons = () => {
       name: "Home"
     },
     {
+      path: "/blogs",
+      name: "Blogs"
+    },
+    {
       path: "/about",
       name: "About"
     },
@@ -29,7 +33,7 @@ const RouteButtons = () => {
           return (
             <Link
               className={
-              `block cursor-pointer py-1.5 px-2 hover:text-white rounded-md text-sm ` +
+                `block cursor-pointer py-1.5 px-2 hover:text-white rounded-md text-sm ` +
                 (activeLink === link.path ? " bg-gray-600 text-white " : "")
               }
               key={index}

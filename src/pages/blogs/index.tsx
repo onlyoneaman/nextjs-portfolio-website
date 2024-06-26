@@ -5,7 +5,6 @@ import { getSortedPostsData } from '@/lib/blogs';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
-  console.log("allPostsData", allPostsData);
   return {
     props: {
       allPostsData,
@@ -14,8 +13,6 @@ export async function getStaticProps() {
 }
 
 const BlogsList = ({allPostsData}) => {
-
-  console.log("a", allPostsData);
 
   return <BlogPostList posts={allPostsData} />
 };
