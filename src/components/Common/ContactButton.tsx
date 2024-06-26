@@ -1,12 +1,15 @@
 import {Button} from "@/components/ui/button.tsx";
+import Link from "next/link";
 
 const ContactButton = () => {
 
 
   return (
-    <Button>
-      Contact
-    </Button>
+    <Link href={'/contact'}>
+      <Button>
+        Contact
+      </Button>
+    </Link>
   )
 };
 
