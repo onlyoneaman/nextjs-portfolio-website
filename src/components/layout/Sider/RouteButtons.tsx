@@ -30,11 +30,15 @@ const RouteButtons = () => {
     >
       {
         links.map((link, index) => {
+          let active = activeLink.includes(link.path);
+          if(link.path == "/" && activeLink !== "/") {
+            active = false;
+          }
           return (
             <Link
               className={
                 `block cursor-pointer py-1.5 px-2 hover:text-white rounded-md text-sm ` +
-                (activeLink === link.path ? " bg-gray-600 text-white " : "")
+                (active ? " bg-gray-600 text-white " : "")
               }
               key={index}
               href={link.path}

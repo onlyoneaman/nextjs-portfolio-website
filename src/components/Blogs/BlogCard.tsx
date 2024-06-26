@@ -1,25 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
+import {Card, CardContent, CardFooter, CardHeader} from '@/components/ui/card';
 
-const BlogCard = ({ post }) => (
-  <Card className="bg-zinc-900 border-zinc-800 hover:border-zinc-700 transition-colors min-w-full">
-    <CardHeader>
-      <div className="w-full h-40 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md mb-4"></div>
-      <h2 className="text-xl font-semibold text-white">{post.title}</h2>
-      <h4 className="text-sm text-zinc-400">
-        {post.description}
-      </h4>
-    </CardHeader>
-    <CardContent>
-      <p className="text-sm text-zinc-400">{post.excerpt}</p>
-    </CardContent>
-    <CardFooter>
-      <Link href={`/blogs/${post.slug}`} className="text-sm text-blue-400 hover:text-blue-300 transition-colors">
-        Read more
-      </Link>
-    </CardFooter>
-  </Card>
-);
+const BlogCard = ({post}) => {
+  return(
+    <Link href={`/blogs/${post.slug}`}>
+      <Card className="bg-transparent border-transparent hover:border-zinc-800 min-w-full">
+        <CardHeader
+          className="flex flex-row p-2 gap-2"
+        >
+          <div className="w-20 h-20 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md mb-4"></div>
+          <div
+            className="flex flex-col gap-1"
+          >
+            <h2 className="text-xl font-semibold text-white">{post.title}</h2>
+            <h4 className="text-sm text-zinc-400">
+              {post.description}
+            </h4>
+          </div>
+        </CardHeader>
+      </Card>
+    </Link>
+  )
+};
 
 export default BlogCard;

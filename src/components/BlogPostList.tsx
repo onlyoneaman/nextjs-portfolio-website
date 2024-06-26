@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogCard from "@/components/Blogs/BlogCard";
+import ContainerTitle from "@/components/Common/ContainerTitle";
 
 const BlogPostList = ({ posts }) => {
   if (!posts || posts.length === 0) {
@@ -8,10 +9,16 @@ const BlogPostList = ({ posts }) => {
 
   return (
     <div
-      className="min-w-full"
+      className="min-w-full space-y-6"
     >
+      <ContainerTitle
+        title="Pensieve"
+      />
+      <p className="text-gray-500">
+        A collection of thoughts, ideas, and musings.
+      </p>
       <div
-        className="flex min-w-full flex-row gap-2 flex-wrap"
+        className="flex min-w-full flex-col gap-1"
       >
         {posts.map((post) => (
           <BlogCard key={post.slug} post={post} />
