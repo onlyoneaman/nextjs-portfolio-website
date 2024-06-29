@@ -18,7 +18,7 @@ const ProjectsList = ({ posts }) => {
         Playground - Small MVP to Production Apps
       </p>
       <div
-        className="flex min-w-full flex-col gap-1"
+        className="flex min-w-full flex-col gap-4"
       >
         {posts.map((post) => (
           <ProjectCard key={post.slug} post={post} />
