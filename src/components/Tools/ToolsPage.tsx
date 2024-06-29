@@ -5,7 +5,7 @@ import toolsData from "@/components/Tools/toolsData";
 const ToolsPage = () => {
 
   return (
-    <div className="min-w-full space-y-5">
+    <div className=" space-y-5">
 
       <ContainerTitle
         title="Shovels"

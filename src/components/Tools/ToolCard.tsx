@@ -1,7 +1,7 @@
 const ToolCard = ({tool}: { tool: { title: string, tag: string, image: string } }) => {
   return (
     <div
-      className="flex flex-row items-center space-y-2"
+      className="flex cursor-pointer flex-row items-center justify-start space-y-2 p-3 rounded-md gap-3 hover:bg-charleston"
     >
       <img
         className="w-12 h-12 rounded-full"
@@ -9,8 +9,12 @@ const ToolCard = ({tool}: { tool: { title: string, tag: string, image: string } 
         alt={tool.title}
       />
       <div>
-        <h1>{tool.title}</h1>
-        <p>{tool.tag}</p>
+        <h1 className="text-lg">
+          {tool.title}
+        </h1>
+        <p className="text-sm">
+          {tool.tag}
+        </p>
       </div>
     </div>
   );
