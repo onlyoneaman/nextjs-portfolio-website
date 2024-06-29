@@ -2,17 +2,17 @@ const toolsData = [
     {
         title: "ChatGPT",
         tag: "Productivity",
-        image: "https://www.technorms.com/wp-content/uploads/2021/06/ChatGPT-Logo.png",
+        image: "chatgpt.png",
     },
     {
         title: "Logseq",
         tag: "Productivity",
-        image: "https://www.technorms.com/wp-content/uploads/2021/06/Logseq-Logo.png",
+        image: "logseq.png",
     },
     {
         title: "Google Tasks",
         tag: "Productivity",
-        image: "https://www.technorms.com/wp-content/uploads/2021/06/Google-Tasks-Logo.png",
+        image: "tasks.png",
     }
 ]
 
