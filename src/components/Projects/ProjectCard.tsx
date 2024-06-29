@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import {Card, CardContent, CardFooter, CardHeader} from '@/components/ui/card';
+import {Card, CardHeader} from '@/components/ui/card';
 import {Button} from "@/components/ui/button";
 
-const ProjectCard = ({post}) => {
+const ProjectCard = ({post}: any) => {
   return(
     <Link href={`/projects/${post.slug}`}>
       <Card className="bg-transparent border-transparent hover:border-zinc-800 min-w-full">

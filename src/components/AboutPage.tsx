@@ -1,7 +1,6 @@
-import aboutImg from '@/assets/about.png';
-import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
-import EmailButton from "@/components/Common/EmailButton.tsx";
-import GetInTouchButton from "@/components/Common/GetInTouchButton.tsx";
+import ContainerTitle from "@/components/Common/ContainerTitle";
+import EmailButton from "@/components/Common/EmailButton";
+import GetInTouchButton from "@/components/Common/GetInTouchButton";
 
 const AboutPage = () => {
 

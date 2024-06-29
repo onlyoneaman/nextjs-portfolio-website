@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { getSortedPostsData, getPostData } from '@/lib/blogs';
 import BlogCard from '@/components/Blogs/BlogCard';
 
-const BlogPost = ({ post }) => (
+const BlogPost = ({ post }: any) => (
   <div className="max-w-2xl mx-auto mt-4 text-white">
     <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
     <p className="text-zinc-400 mb-4">{post.date}</p>
@@ -15,15 +15,15 @@ const BlogPost = ({ post }) => (
   </div>
 );
 
-const BlogPostList = ({ posts }) => (
+const BlogPostList = ({ posts }: any) => (
   <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-    {posts.map((post) => (
+    {posts.map((post: any) => (
       <BlogCard key={post.slug} post={post} />
     ))}
   </div>
 );
 
-const BlogPage = ({ posts, post }) => {
+const BlogPage = ({ posts, post }: any) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -63,7 +63,7 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   if (params?.slug) {
     const post = getPostData(params.slug);
     return { props: { post } };

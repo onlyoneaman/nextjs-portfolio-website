@@ -1,4 +1,4 @@
-const Container = ({children}) => {
+const Container = ({children}: any) => {
 
   return (
     <div

@@ -12,7 +12,7 @@ export async function getStaticProps() {
   };
 }
 
-const BlogsList = ({allPostsData}) => {
+const BlogsList = ({allPostsData}: any) => {
 
   return <BlogPostList posts={allPostsData} />
 };

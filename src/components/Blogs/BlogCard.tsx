@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import {Card, CardContent, CardFooter, CardHeader} from '@/components/ui/card';
 
-const BlogCard = ({post}) => {
+const BlogCard = ({post}: any) => {
   return(
     <Link href={`/blogs/${post.slug}`}>
       <Card className="bg-transparent border-transparent hover:border-zinc-800 min-w-full">

@@ -1,3 +1,3 @@
-import Sider from "@/components/Layout/Sider/Sider.tsx";
+import Sider from "@/components/layout/Sider/Sider.tsx";
 
 export default Sider;

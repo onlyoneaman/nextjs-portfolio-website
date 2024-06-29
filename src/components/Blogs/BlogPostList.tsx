@@ -2,7 +2,7 @@ import React from 'react';
 import BlogCard from "@/components/Blogs/BlogCard";
 import ContainerTitle from "@/components/Common/ContainerTitle";
 
-const BlogPostList = ({ posts }) => {
+const BlogPostList = ({ posts }: any) => {
   if (!posts || posts.length === 0) {
     return <p>No blog posts found.</p>;
   }
@@ -20,7 +20,7 @@ const BlogPostList = ({ posts }) => {
       <div
         className="flex min-w-full flex-col gap-1"
       >
-        {posts.map((post) => (
+        {posts.map((post: any) => (
           <BlogCard key={post.slug} post={post} />
         ))}
       </div>

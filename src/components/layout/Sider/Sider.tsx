@@ -1,6 +1,6 @@
-import SocialButtons from "@/components/Layout/Sider/SocialButtons.tsx";
-import RouteButtons from "@/components/Layout/Sider/RouteButtons.tsx";
-import AvatarBox from "@/components/Layout/Sider/AvatarBox.tsx";
+import SocialButtons from "@/components/layout/Sider/SocialButtons.tsx";
+import RouteButtons from "@/components/layout/Sider/RouteButtons.tsx";
+import AvatarBox from "@/components/layout/Sider/AvatarBox.tsx";
 
 const Sider = () => {
 

@@ -23,7 +23,7 @@ const ToolsPage = () => {
           toolsData.map((tool) => {
             return (
               <ToolCard
-                key={tool.id}
+                key={tool.title}
                 tool={tool}
               />
             )

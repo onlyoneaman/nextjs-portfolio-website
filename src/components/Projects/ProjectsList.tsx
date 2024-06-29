@@ -2,7 +2,7 @@ import React from 'react';
 import ContainerTitle from "@/components/Common/ContainerTitle";
 import ProjectCard from "@/components/Projects/ProjectCard";
 
-const ProjectsList = ({ posts }) => {
+const ProjectsList = ({ posts }: any) => {
   if (!posts || posts.length === 0) {
     return <p>No projects found.</p>;
   }
@@ -20,7 +20,7 @@ const ProjectsList = ({ posts }) => {
       <div
         className="flex min-w-full flex-col gap-4"
       >
-        {posts.map((post) => (
+        {posts.map((post: any) => (
           <ProjectCard key={post.slug} post={post} />
         ))}
       </div>
