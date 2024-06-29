@@ -10,10 +10,10 @@ const HomePage = () => {
       className="w-[80%] mx-auto space-y-4"
     >
       <ContainerTitle
-        title="Hello, I'm Aman"
+        title="Hey, I'm Aman"
       />
       <h2
-        className="text-3xl font-medium"
+        className="text-3xl md:text-5xl font-medium"
       >
         I love to{" "}
         <span

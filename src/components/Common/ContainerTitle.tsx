@@ -6,7 +6,7 @@ const ContainerTitle = ({title}: ContainerTitleProps) => {
 
   return (
     <h1
-      className="text-4xl font-medium"
+      className="text-3xl md:text-5xl font-medium"
     >
       {title}
     </h1>
