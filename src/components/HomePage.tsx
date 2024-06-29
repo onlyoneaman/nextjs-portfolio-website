@@ -7,24 +7,26 @@ const HomePage = () => {
 
   return (
     <div
-      className="w-[80%] mx-auto space-y-4"
+      className="w-[80%] mx-auto space-y-8"
     >
-      <ContainerTitle
-        title="Hey, I'm Aman"
-      />
-      <h2
-        className="text-3xl md:text-5xl font-medium"
-      >
-        I love to{" "}
-        <span
-          className="text-gray-500"
+      <div className="space-y-3">
+        <ContainerTitle
+          title="Hey, I'm Aman"
+        />
+        <h2
+          className="text-3xl md:text-5xl font-medium"
         >
+          I love to{" "}
+          <span
+            className="text-gray-500"
+          >
             <Typewriter
               words={['Code', 'Design', 'Build', 'Innovate']}
               cursor
             />
           </span>
-      </h2>
+        </h2>
+      </div>
 
       <div
         className="text-md tracking-wider font-light space-y-3 md:space-y-5"
