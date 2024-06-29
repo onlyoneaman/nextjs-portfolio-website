@@ -1,6 +1,6 @@
 import {getContentData, getSortedContentData} from "@/lib/data";
 
-const postsDirectory = 'blogs';
+const postsDirectory = 'projects';
 
 export function getSortedPostsData() {
     return getSortedContentData(postsDirectory);

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
-import {IoHomeOutline, IoMailOutline, IoPencilOutline} from "react-icons/io5";
+import {IoHomeOutline, IoMailOutline, IoNavigate, IoPencilOutline} from "react-icons/io5";
 import {FaRegUserCircle} from "react-icons/fa";
 
 const RouteButtons = () => {
@@ -10,6 +10,11 @@ const RouteButtons = () => {
       path: "/",
       name: "Home",
       icon: <IoHomeOutline />
+    },
+    {
+      path: "/projects",
+      name: "Projects",
+      icon: <IoNavigate />
     },
     {
       path: "/blogs",
