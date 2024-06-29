@@ -10,7 +10,7 @@ const AvatarBox = () => {
 
   return (
     <div
-      className="flex items-center justify-start space-x-2 mb-8"
+      className="flex items-center justify-start space-x-3 mb-8 px-2"
       onClick={() => returnToHome()}
     >
       <Avatar>
@@ -23,10 +23,10 @@ const AvatarBox = () => {
         </AvatarFallback>
       </Avatar>
       <div
-        className="text-xs flex flex-col space-y-1"
+        className="text-sm flex flex-col tracking-wide space-y-1"
       >
         <span className="text-white">
-          Aman
+          Aman Kumar
         </span>
         <span>
           AI Engineer
