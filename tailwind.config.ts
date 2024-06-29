@@ -27,6 +27,7 @@ const config = {
         "primary": "#161616",
         "secondary": "#f3f3f3",
         "slate": "#1C1C1C",
+        "charleston": "#2B2B2B",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
