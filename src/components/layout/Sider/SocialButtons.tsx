@@ -34,7 +34,7 @@ const SocialButtons = () => {
 
   return (
     <div
-      className="space-x-2 py-5"
+      className="space-x-2 space-y-3 py-5"
     >
       <span
         className="text-sm"
