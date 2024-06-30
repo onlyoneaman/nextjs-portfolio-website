@@ -1,5 +1,6 @@
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
 import {useRouter} from "next/router";
+import {Typewriter} from "react-simple-typewriter";
 
 const AvatarBox = () => {
   const router = useRouter();
@@ -23,13 +24,20 @@ const AvatarBox = () => {
         </AvatarFallback>
       </Avatar>
       <div
-        className="text-sm flex flex-col tracking-wide space-y-1"
+        className="text-sm flex flex-col"
       >
         <span className="text-white">
           Aman Kumar
         </span>
         <span>
-          AI Engineer
+          <Typewriter
+            words={[
+              "AI Engineer",
+              "Problem Solver",
+              "FullStack Dev"
+            ]}
+            cursor
+          />
         </span>
       </div>
     </div>
