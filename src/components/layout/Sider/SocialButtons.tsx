@@ -1,6 +1,7 @@
 import {
   FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter
 } from 'react-icons/fa'
+import {GoLinkExternal} from "react-icons/go";
 
 const SocialButtons = () => {
 
@@ -47,19 +48,22 @@ const SocialButtons = () => {
             return (
               <a
                 className={
-                  `flex items-center justify-start gap-2 cursor-pointer py-1.5 hover:text-white rounded-md text-sm ` +
+                  `flex items-center justify-between gap-2 cursor-pointer py-1.5 hover:text-white rounded-md text-sm ` +
                   `text-gray-400 `
                 }
                 href={socialLink.link}
                 key={index}
                 target={"_blank"}
               >
-              <span>
-                {socialLink.icon}
-              </span>
-                <span>
-                {socialLink.title}
-              </span>
+                <div className={"flex items-center justify-center gap-2"}>
+                  <span>
+                    {socialLink.icon}
+                  </span>
+                    <span>
+                    {socialLink.title}
+                  </span>
+                </div>
+                <GoLinkExternal />
               </a>
             )
           })
