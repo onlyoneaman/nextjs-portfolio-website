@@ -4,9 +4,9 @@ import Container from "@/components/layout/Container";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-stretch min-w-full">
+    <div className="flex min-h-screen items-stretch min-w-full bg-primary text-white">
       <Sider />
-      <div className="grow min-w-full mx-auto pl-[200px] min-h-screen flex flex-col bg-primary overflow-y-scroll text-white">
+      <div className="flex-1 flex flex-col ml-64">
         <Container>
           {children}
         </Container>
