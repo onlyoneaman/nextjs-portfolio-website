@@ -1,6 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
 
+const LiveTime = () => {
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  return (
+    <div className="text-sm text-gray-600 font-light w-20">
+      {currentTime}
+    </div>
+  );
+};
+
 const FooterSection = ({ title, items }) => (
   <div className="flex flex-col">
     <h3 className="text-white font-semibold mb-2">{title}</h3>
@@ -22,6 +42,8 @@ const Footer = () => {
   useEffect(() => {
     const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     setCurrentTime(time);
+    // update time in 2 seconds
+
   }, []);
 
   return (
@@ -62,7 +84,7 @@ const Footer = () => {
           Made by Aman | 2024 amankumar.ai
         </div>
 
-        <div className="text-6xl font-light">{currentTime}</div>
+        <LiveTime />
       </div>
       {/*<div className="flex justify-around items-center mt-4 text-sm text-gray-400 hidden">*/}
       {/*  <Link href="/buy-template" className="hover:text-white">*/}
