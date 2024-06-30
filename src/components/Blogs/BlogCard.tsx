@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {Card, CardHeader} from '@/components/ui/card';
+import Image from "next/image";
 
 const BlogCard = ({post}: any) => {
   return(
@@ -9,7 +10,17 @@ const BlogCard = ({post}: any) => {
         <CardHeader
           className="flex flex-row p-2 gap-2"
         >
-          <div className="min-w-36 h-24 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md mb-4"></div>
+          {post.image ? (
+            <Image
+              className="rounded-md"
+              src={post.image}
+              alt={post.title}
+              width={144}
+              height={96}
+            />
+          ) : (
+            <div className="min-w-36 h-24 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md"></div>
+          )}
           <div
             className="flex flex-col gap-1"
           >
