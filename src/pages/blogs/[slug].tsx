@@ -4,13 +4,43 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { getSortedPostsData, getPostData } from '@/lib/blogs';
 import BlogCard from '@/components/Blogs/BlogCard';
+import Image from "next/image";
+import {Button} from "@/components/ui/button.tsx";
 
 const BlogPost = ({ post }: any) => (
-  <div className="max-w-2xl mx-auto mt-4 text-white">
-    <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-    <p className="text-zinc-400 mb-4">{post.date}</p>
+  <div className="max-w-2xl mx-auto mt-4 text-white space-y-5">
+    <div className="space-y-2">
+      <h1 className="text-3xl font-bold">{post.title}</h1>
+      <p className="text-zinc-400 mb-4">{post.date}</p>
+    </div>
+
+    <div>
+      <Image
+        className="rounded-md"
+        src={post.image}
+        alt={post.title}
+        width={768}
+        height={96}
+      />
+    </div>
+
     <div className="prose prose-invert prose-lg">
       <ReactMarkdown>{post.content}</ReactMarkdown>
+    </div>
+
+    <div>
+      {
+        post.link && (
+          <Link
+            href={post.link}
+            target={"_blank"}
+          >
+            <Button>
+              {post.label ?? "Visit"}
+            </Button>
+          </Link>
+        )
+      }
     </div>
   </div>
 );
