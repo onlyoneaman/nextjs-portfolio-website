@@ -39,7 +39,7 @@ const SocialButtons = () => {
       <span
         className="text-sm"
       >
-        Follow
+        Connect
       </span>
       <div className="space-y-1">
         {
