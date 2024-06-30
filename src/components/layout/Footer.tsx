@@ -21,11 +21,11 @@ const LiveTime = () => {
   );
 };
 
-const FooterSection = ({ title, items }) => (
+const FooterSection = ({ title, items }: any) => (
   <div className="flex flex-col">
     <h3 className="text-white font-semibold mb-2">{title}</h3>
     <ul>
-      {items.map((item, index) => (
+      {items.map((item: any, index: number) => (
         <li key={index} className="text-gray-400 hover:text-white mb-1">
           <Link href={`/${item.toLowerCase()}`}>
             {item}
