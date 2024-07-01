@@ -14,7 +14,7 @@ const HomePage = () => {
           title="Hey, I'm Aman"
         />
         <h2
-          className="text-3xl md:text-5xl font-medium"
+          className="text-3xl md:text-5xl font-medium text-white"
         >
           I love to{" "}
           <span

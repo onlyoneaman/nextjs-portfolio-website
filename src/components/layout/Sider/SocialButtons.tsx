@@ -48,8 +48,7 @@ const SocialButtons = () => {
             return (
               <a
                 className={
-                  `flex items-center justify-between gap-2 cursor-pointer py-1.5 hover:text-white rounded-md text-sm ` +
-                  `text-gray-400 `
+                  `flex items-center justify-between gap-2 cursor-pointer py-1.5 hover:text-white rounded-md text-sm`
                 }
                 href={socialLink.link}
                 key={index}

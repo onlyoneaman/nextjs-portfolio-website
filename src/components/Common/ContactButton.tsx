@@ -5,7 +5,10 @@ const ContactButton = () => {
 
 
   return (
-    <Link href={'/contact'}>
+    <Link
+      className="text-white hover:text-oldsilver"
+      href={'/contact'}
+    >
       <Button>
         Contact
       </Button>

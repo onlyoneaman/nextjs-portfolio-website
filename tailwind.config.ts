@@ -26,6 +26,7 @@ const config = {
         foreground: "hsl(var(--foreground))",
         "primary": "#161616",
         "secondary": "#f3f3f3",
+        "oldsilver": "#858585",
         "slate": "#1C1C1C",
         "charleston": "#2B2B2B",
         destructive: {

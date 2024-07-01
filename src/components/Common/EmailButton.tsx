@@ -4,9 +4,11 @@ import {FiCopy} from "react-icons/fi";
 const EmailButton = () => {
 
   return (
-    <Button>
+    <Button
+      className={"text-white hover:text-oldsilver"}
+    >
       <span
-        className="text-gray-500 text-sm pr-2"
+        className="text-sm pr-2"
       >
         <FiCopy
           className="m-0"
