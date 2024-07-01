@@ -14,7 +14,7 @@ const BlogPostList = ({ posts }: any) => {
       <ContainerTitle
         title="Pensieve"
       />
-      <p className="text-gray-500">
+      <p className="">
         A collection of thoughts, ideas, and musings.
       </p>
       <div

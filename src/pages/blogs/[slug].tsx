@@ -8,9 +8,9 @@ import Image from "next/image";
 import {Button} from "@/components/ui/button.tsx";
 
 const BlogPost = ({ post }: any) => (
-  <div className="max-w-2xl mx-auto mt-4 text-white space-y-5">
+  <div className="max-w-2xl mx-auto mt-4 text-oldsilver space-y-5">
     <div className="space-y-2">
-      <h1 className="text-3xl font-bold">{post.title}</h1>
+      <h1 className="text-3xl font-bold text-white">{post.title}</h1>
       <p className="text-zinc-400 mb-4">{post.date}</p>
     </div>
 

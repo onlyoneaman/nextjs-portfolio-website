@@ -6,7 +6,7 @@ import Image from "next/image";
 const BlogCard = ({post}: any) => {
   return(
     <Link href={`/blogs/${post.slug}`}>
-      <Card className="bg-transparent border-transparent hover:border-zinc-800 min-w-full">
+      <Card className="text-oldsilver bg-transparent border-transparent hover:border-zinc-800 min-w-full">
         <CardHeader
           className="flex flex-row p-2 gap-2"
         >
@@ -24,8 +24,10 @@ const BlogCard = ({post}: any) => {
           <div
             className="flex flex-col gap-1"
           >
-            <h2 className="font-semibold text-white">{post.title}</h2>
-            <h4 className="text-xs text-zinc-400 line-clamp-2">
+            <h2 className="font-semibold text-white">
+              {post.title}
+            </h2>
+            <h4 className="text-xs line-clamp-2">
               {post.description}
             </h4>
           </div>
