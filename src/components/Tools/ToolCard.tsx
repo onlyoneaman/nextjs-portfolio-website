@@ -6,7 +6,8 @@ const ToolCard = ({tool}: { tool: { title: string, tag: string, image: string, l
 
   return (
     <div
-      className="flex cursor-pointer flex-row items-center justify-start space-y-2 p-3 rounded-md gap-3 hover:bg-charleston"
+      className="flex cursor-pointer flex-row items-center justify-start space-y-2 p-3 rounded-md gap-3
+      border-transparent hover:border-white hover:bg-charleston"
       onClick={() => openLink()}
     >
       <img

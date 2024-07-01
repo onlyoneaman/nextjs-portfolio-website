@@ -17,7 +17,7 @@ const ToolsPage = () => {
       </h3>
 
       <div
-        className="text-sm text-gray-500 grid grid-cols-2 gap-1"
+        className="text-sm grid grid-cols-2 gap-y-3 gap-x-1"
       >
         {
           toolsData.map((tool) => {
