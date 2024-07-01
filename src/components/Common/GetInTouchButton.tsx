@@ -4,7 +4,10 @@ import Link from "next/link";
 const GetInTouchButton = () => {
 
   return(
-    <Link href={'/contact'}>
+    <Link
+      className="text-white hover:text-oldsilver"
+      href={'/contact'}
+    >
       <Button>
         Get in Touch
       </Button>
