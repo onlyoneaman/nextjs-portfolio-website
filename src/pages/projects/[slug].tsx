@@ -7,8 +7,10 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import {Button} from "@/components/ui/button";
 
 const ProjectsPost = ({post}: any) => (
-  <div className="max-w-2xl mx-auto mt-4 text-white space-y-3">
-    <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+  <div className="max-w-2xl mx-auto mt-4 space-y-3">
+    <h1 className="text-3xl font-bold mb-4 text-white">
+      {post.title}
+    </h1>
     {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
     <img
       src={post.image}
@@ -21,7 +23,7 @@ const ProjectsPost = ({post}: any) => (
 
     <div>
       <Link
-        className="text-gray-500 hover:text-gray-300 transition-colors"
+        className="text-white hover:text-oldsilver transition-colors"
         href={post.link}
         target={"_blank"}
       >
@@ -52,7 +54,7 @@ const BlogPage = ({posts, post}: any) => {
     <div className="">
       <div className="container mx-auto px-4 py-8">
         <Link
-          className="text-gray-500 hover:tracking-wider hover:text-gray-300 transition-colors mb-4 inline-block"
+          className="hover:tracking-wide hover:underline transition-colors mb-4 inline-block"
           href="/projects"
         >
           ← All Projects

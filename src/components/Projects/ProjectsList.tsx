@@ -14,7 +14,7 @@ const ProjectsList = ({ posts }: any) => {
       <ContainerTitle
         title="Projects"
       />
-      <p className="text-gray-500">
+      <p className="">
         Playground - Small MVP to Production Apps
       </p>
       <div

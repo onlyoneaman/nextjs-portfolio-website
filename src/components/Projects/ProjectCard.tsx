@@ -6,7 +6,7 @@ import {Button} from "@/components/ui/button";
 const ProjectCard = ({post}: any) => {
   return(
     <Link href={`/projects/${post.slug}`}>
-      <Card className="bg-transparent border-transparent hover:border-zinc-800 min-w-full">
+      <Card className="bg-transparent border-transparent text-oldsilver hover:border-zinc-800 min-w-full">
         <CardHeader
           className="flex flex-row p-2 gap-4"
         >
@@ -22,7 +22,7 @@ const ProjectCard = ({post}: any) => {
               <h2 className="font-semibold text-white">
                 {post.title}
               </h2>
-              <h4 className="text-xs text-zinc-400">
+              <h4 className="text-xs">
                 {post.description}
               </h4>
             </div>
