@@ -7,7 +7,7 @@ const Sider = () => {
   return (
     <div
       className="
-      fixed left-0 top-0 h-screen w-64 px-4 py-10 overflow-y-auto bg-sec
+      fixed left-0 top-0 h-screen w-64 px-4 py-10 overflow-y-auto
       bg-slate"
     >
       <AvatarBox />
