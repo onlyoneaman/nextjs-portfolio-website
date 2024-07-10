@@ -1,7 +1,7 @@
 ---
 title: 'Crux Dash Launcher'
 description: 'A Simple Dashboard Launcher for Crux'
-date: '2023-2-21'
+date: '2022-2-21'
 tags: ['Javascript']
 link: 'https://onlyoneaman.github.io/crux-dash-launcher/'
 label: 'Link'

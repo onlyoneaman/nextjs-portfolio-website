@@ -13,7 +13,7 @@ const ProjectCard = ({post}: any) => {
           <img
             src={post.image}
             alt={post.title}
-            className="min-w-52 h-32 object-cover rounded-md"
+            className="max-w-52 min-w-52 h-32 object-cover rounded-md"
           />
           <div
             className="flex flex-col justify-between"
