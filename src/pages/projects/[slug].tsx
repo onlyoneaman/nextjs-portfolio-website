@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import {getSortedPostsData, getPostData} from '@/lib/projects';
 import ProjectCard from "@/components/Projects/ProjectCard";
 import {Button} from "@/components/ui/button";
+import SEO from "@/components/SEO.tsx";
 
 const ProjectsPost = ({post}: any) => (
   <div className="max-w-2xl mx-auto mt-4 space-y-3">
@@ -51,7 +52,8 @@ const BlogPage = ({posts, post}: any) => {
   }
 
   return (
-    <div className="">
+    <>
+      <SEO title={post.title} />
       <div className="container mx-auto px-4 py-8">
         <Link
           className="hover:tracking-wide hover:underline transition-colors mb-4 inline-block"
@@ -70,7 +72,7 @@ const BlogPage = ({posts, post}: any) => {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

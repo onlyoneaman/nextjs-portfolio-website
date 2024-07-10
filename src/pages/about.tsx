@@ -1,9 +1,15 @@
 import AboutPage from "@/components/AboutPage";
+import SEO from "@/components/SEO.tsx";
 
 const About = () => {
 
-  return(
-    <AboutPage />
+  return (
+    <>
+      <SEO
+        title={"About"}
+      />
+      <AboutPage/>
+    </>
   )
 };
 

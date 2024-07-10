@@ -6,6 +6,7 @@ import { getSortedPostsData, getPostData } from '@/lib/blogs';
 import BlogCard from '@/components/Blogs/BlogCard';
 import Image from "next/image";
 import {Button} from "@/components/ui/button.tsx";
+import SEO from "@/components/SEO.tsx";
 
 const BlogPost = ({ post }: any) => (
   <div className="max-w-2xl mx-auto mt-4 text-oldsilver space-y-5">
@@ -61,7 +62,8 @@ const BlogPage = ({ posts, post }: any) => {
   }
 
   return (
-    <div className="">
+    <>
+      <SEO title={post.title} />
       <div className="container mx-auto px-4 py-8">
         <Link
           className="text-gray-500 hover:tracking-wider hover:text-gray-300 transition-colors mb-4 inline-block"
@@ -80,7 +82,7 @@ const BlogPage = ({ posts, post }: any) => {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 };
 

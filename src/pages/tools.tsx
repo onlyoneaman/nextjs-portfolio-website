@@ -1,9 +1,13 @@
 import ToolsPage from "@/components/Tools/ToolsPage";
+import SEO from "@/components/SEO.tsx";
 
 const Tools = () => {
 
   return(
-    <ToolsPage />
+    <>
+      <SEO title={"Tools"} />
+      <ToolsPage />
+    </>
   )
 };
 
