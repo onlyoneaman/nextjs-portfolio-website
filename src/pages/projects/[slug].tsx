@@ -11,9 +11,12 @@ const ProjectsPost = ({post}: any) => {
 
   return(
     <div className="max-w-2xl mx-auto mt-4 space-y-3">
-      <h1 className="text-3xl font-bold mb-4 text-white">
+      <h1 className="text-3xl font-bold text-white">
         {post.title}
       </h1>
+      <h3 className="text-xl text-zinc-400">
+        {post.description}
+      </h3>
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
       <img
         src={post.image}
