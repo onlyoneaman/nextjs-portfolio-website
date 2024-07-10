@@ -1,12 +1,13 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
 import { getSortedPostsData, getPostData } from '@/lib/blogs';
 import BlogCard from '@/components/Blogs/BlogCard';
 import Image from "next/image";
 import {Button} from "@/components/ui/button.tsx";
 import SEO from "@/components/SEO.tsx";
+import remarkGfm from "remark-gfm";
+import ReactMarkdown from "react-markdown";
 
 const BlogPost = ({ post }: any) => (
   <div className="mt-4 text-oldsilver space-y-5">
@@ -30,7 +31,11 @@ const BlogPost = ({ post }: any) => (
     }
 
     <div className="prose prose-invert prose-lg py-5">
-      <ReactMarkdown>{post.content}</ReactMarkdown>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+      >
+        {post.content}
+      </ReactMarkdown>
     </div>
 
     <div>
