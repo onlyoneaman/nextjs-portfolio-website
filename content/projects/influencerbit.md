@@ -10,4 +10,6 @@ image: "/content/projects/influencerbit.png"
 
 ## Digital Word of Mouth marketing solution
 
+### B2B-SAAS automating word of mouth for D2C brands
+
 Your customers are already on Instagram. Auto Engage, Incentivise them to post, track mentions & send rewards - All on Autopilot!
