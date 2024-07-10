@@ -7,34 +7,53 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import {Button} from "@/components/ui/button";
 import SEO from "@/components/SEO.tsx";
 
-const ProjectsPost = ({post}: any) => (
-  <div className="max-w-2xl mx-auto mt-4 space-y-3">
-    <h1 className="text-3xl font-bold mb-4 text-white">
-      {post.title}
-    </h1>
-    {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
-    <img
-      src={post.image}
-      alt={post.title}
-      className="w-full h-auto rounded-md"
-    />
-    <div className="prose prose-invert prose-lg">
-      <ReactMarkdown>{post.content}</ReactMarkdown>
-    </div>
+const ProjectsPost = ({post}: any) => {
 
-    <div>
-      <Link
-        className="text-white hover:text-oldsilver transition-colors"
-        href={post.link}
-        target={"_blank"}
+  return(
+    <div className="max-w-2xl mx-auto mt-4 space-y-3">
+      <h1 className="text-3xl font-bold mb-4 text-white">
+        {post.title}
+      </h1>
+      {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
+      <img
+        src={post.image}
+        alt={post.title}
+        className="min-w-full h-96 object-cover rounded-md"
+      />
+      <div className="prose prose-invert prose-lg">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+      </div>
+
+      <div
+        className="flex space-x-4"
       >
-        <Button>
-          {post.label || "Link"}
-        </Button>
-      </Link>
+        <Link
+          className="text-white hover:text-oldsilver transition-colors"
+          href={post.link}
+          target={"_blank"}
+        >
+          <Button>
+            {post.label || "Link"}
+          </Button>
+        </Link>
+
+        {
+          post.secondaryLink && post.secondaryLabel && (
+            <Link
+              className="text-white hover:text-oldsilver transition-colors"
+              href={post.secondaryLink}
+              target={"_blank"}
+            >
+              <Button>
+                {post.secondaryLabel}
+              </Button>
+            </Link>
+          )
+        }
+      </div>
     </div>
-  </div>
-);
+  )
+};
 
 const ProjectsPostList = ({posts}: any) => (
   <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
