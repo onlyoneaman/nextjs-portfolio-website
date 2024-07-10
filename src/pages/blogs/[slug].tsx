@@ -9,23 +9,27 @@ import {Button} from "@/components/ui/button.tsx";
 import SEO from "@/components/SEO.tsx";
 
 const BlogPost = ({ post }: any) => (
-  <div className="max-w-2xl mx-auto mt-4 text-oldsilver space-y-5">
+  <div className="mt-4 text-oldsilver space-y-5">
     <div className="space-y-2">
       <h1 className="text-3xl font-bold text-white">{post.title}</h1>
       <p className="text-zinc-400 mb-4">{post.date}</p>
     </div>
 
-    <div>
-      <Image
-        className="rounded-md"
-        src={post.image}
-        alt={post.title}
-        width={768}
-        height={96}
-      />
-    </div>
+    {
+      post.image && (
+        <div>
+          <Image
+            className="rounded-md"
+            src={post.image}
+            alt={post.title}
+            width={768}
+            height={96}
+          />
+        </div>
+      )
+    }
 
-    <div className="prose prose-invert prose-lg">
+    <div className="prose prose-invert prose-lg py-5">
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </div>
 
@@ -64,7 +68,7 @@ const BlogPage = ({ posts, post }: any) => {
   return (
     <>
       <SEO title={post.title} />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container px-4 py-8 max-w-2xl mx-auto">
         <Link
           className="text-gray-500 hover:tracking-wider hover:text-gray-300 transition-colors mb-4 inline-block"
           href="/blogs"

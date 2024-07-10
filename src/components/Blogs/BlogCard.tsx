@@ -10,10 +10,10 @@ const BlogCard = ({post}: any) => {
         <CardHeader
           className="flex flex-row p-2 gap-2"
         >
-          {post.image ? (
+          {(post.cardImage || post.image) ? (
             <Image
               className="rounded-md"
-              src={post.image}
+              src={post.cardImage || post.image}
               alt={post.title}
               width={144}
               height={96}

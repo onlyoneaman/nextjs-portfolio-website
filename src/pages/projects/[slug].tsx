@@ -10,7 +10,7 @@ import SEO from "@/components/SEO.tsx";
 const ProjectsPost = ({post}: any) => {
 
   return(
-    <div className="max-w-2xl mx-auto mt-4 space-y-3">
+    <div className="mx-auto mt-4 space-y-3">
       <h1 className="text-3xl font-bold text-white">
         {post.title}
       </h1>
@@ -18,12 +18,17 @@ const ProjectsPost = ({post}: any) => {
         {post.description}
       </h3>
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
-      <img
-        src={post.image}
-        alt={post.title}
-        className="min-w-full h-96 object-cover rounded-md"
-      />
-      <div className="prose prose-invert prose-lg">
+      {
+        post.image && (
+          <img
+            src={post.image}
+            alt={post.title}
+            className="min-w-full h-96 object-cover rounded-md"
+          />
+        )
+      }
+
+      <div className="prose prose-invert prose-lg py-5">
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </div>
 
@@ -66,7 +71,7 @@ const ProjectsPostList = ({posts}: any) => (
   </div>
 );
 
-const BlogPage = ({posts, post}: any) => {
+const ProjectPage = ({posts, post}: any) => {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -76,7 +81,7 @@ const BlogPage = ({posts, post}: any) => {
   return (
     <>
       <SEO title={post.title} />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto max-w-2xl px-4 py-8">
         <Link
           className="hover:tracking-wide hover:underline transition-colors mb-4 inline-block"
           href="/projects"
@@ -117,4 +122,4 @@ export async function getStaticProps({params}: any) {
   return {props: {posts}};
 }
 
-export default BlogPage;
+export default ProjectPage;

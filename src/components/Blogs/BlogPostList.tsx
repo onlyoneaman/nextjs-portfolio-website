@@ -15,14 +15,17 @@ const BlogPostList = ({ posts }: any) => {
         title="Pensieve"
       />
       <p className="">
-        A collection of thoughts, ideas, and musings.
+        A collection of thoughts, ideas, and musings. You can check more of my writings on my <a href="https://onlyoneaman.medium.com" target="_blank" rel="noopener noreferrer" className="text-blue-500">Medium</a> profile.
       </p>
       <div
         className="flex min-w-full flex-col gap-1"
       >
-        {posts.map((post: any) => (
-          <BlogCard key={post.slug} post={post} />
-        ))}
+        {posts.map((post: any) => {
+          if(post.hidden) return null;
+          return(
+            <BlogCard key={post.slug} post={post} />
+          )
+        })}
       </div>
     </div>
   );
