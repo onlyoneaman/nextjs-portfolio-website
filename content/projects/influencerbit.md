@@ -12,4 +12,6 @@ image: "/content/projects/influencerbit.png"
 
 ### B2B-SAAS automating word of mouth for D2C brands
 
+Ran from Mid 2021 to Mid 2022
+
 Your customers are already on Instagram. Auto Engage, Incentivise them to post, track mentions & send rewards - All on Autopilot!
