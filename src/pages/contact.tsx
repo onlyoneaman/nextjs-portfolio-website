@@ -6,6 +6,7 @@ import {Input} from "@/components/ui/input.tsx";
 import {Textarea} from "@/components/ui/textarea.tsx";
 import {Button} from "@/components/ui/button.tsx";
 import {useState} from "react";
+import SubscribeCard from "@/components/Common/SubscribeCard.tsx";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
@@ -121,11 +122,7 @@ const Contact = () => {
           }
         </div>
 
-        <div
-          className={"hidden"}
-        >
-          Subscribe to Newsletter
-        </div>
+        <SubscribeCard />
       </div>
     </>
   );
