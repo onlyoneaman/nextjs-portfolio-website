@@ -43,7 +43,7 @@ const RouteButtons = () => {
 
   return (
     <div
-      className="space-y-1"
+      className="space-y-1 py-3"
     >
       {
         links.map((link, index) => {
@@ -54,16 +54,16 @@ const RouteButtons = () => {
           return (
             <Link
               className={
-                `flex items-center justify-start gap-2 cursor-pointer px-3 py-2 hover:text-white rounded-md text-sm ` +
-                (active ? " bg-charleston text-white " : "")
+                `flex items-center border justify-start gap-2 cursor-pointer px-3 py-2 hover:text-white rounded-md text-sm ` +
+                (active ? "border-[#393939] bg-charleston text-white " : "border-transparent")
               }
               key={index}
               href={link.path}
             >
-              <span>
+              <span key={"icon"}>
                 {link.icon}
               </span>
-              <span>
+              <span key={"name"}>
                 {link.name}
               </span>
             </Link>
