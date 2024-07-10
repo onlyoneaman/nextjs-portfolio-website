@@ -8,7 +8,7 @@ import {Button} from "@/components/ui/button.tsx";
 
 const Contact = () => {
 
-  const submitForm = (e) => {
+  const submitForm = (e: any) => {
     e.preventDefault();
     const values = {
       name: e.target.name.value,
