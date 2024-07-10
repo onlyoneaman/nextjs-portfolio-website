@@ -5,17 +5,27 @@ import CallButton from "@/components/Common/CallButton.tsx";
 import {Input} from "@/components/ui/input.tsx";
 import {Textarea} from "@/components/ui/textarea.tsx";
 import {Button} from "@/components/ui/button.tsx";
+import {useState} from "react";
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false);
 
-  const submitForm = (e: any) => {
+  const onSubmit = async (e: any) => {
     e.preventDefault();
-    const values = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: JSON.stringify(data),
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    if (response.ok) {
+      form.reset();
+      setSuccess(true);
     }
-    console.log("Form Submitted", values);
   }
 
   return (
@@ -38,54 +48,77 @@ const Contact = () => {
           <CallButton/>
           <EmailButton/>
         </div>
-        <div>
-          <h3>
-            Send a message
-          </h3>
-          <form
-            className="space-y-4"
-            onSubmit={submitForm}
-          >
-            <div
-              className="grid grid-cols-2 gap-3"
-            >
-              <div>
-                <Input
-                  className="border-none bg-slate"
-                  type="text"
-                  placeholder="Name"
-                  required={true}
-                  name={"name"}
-                />
-              </div>
-              <div>
-                <Input
-                  className="border-none bg-slate"
-                  type="email"
-                  placeholder="Email"
-                  required={true}
-                  name={"email"}
-                />
-              </div>
-            </div>
+        <div
+          className="space-y-3"
+        >
+          {
+            success ? (
+              <>
+                <h3
+                  className="text-xl font-bold text-white"
+                >
+                  {"Thanks for reaching out!"}
+                </h3>
+                <p>
+                  {"I'll get back to you as soon as possible."}
+                </p>
+              </>
+            ) : (
+              <>
+                <h3
+                  className="text-xl font-bold text-white"
+                >
+                  Send a message
+                </h3>
+                <form
+                  action="https://formspree.io/f/mwpepkyp"
+                  className="space-y-4"
+                  method="POST"
+                  onSubmit={onSubmit}
+                >
+                  <div
+                    className="grid grid-cols-2 gap-3"
+                  >
+                    <div>
+                      <Input
+                        className="border-none bg-slate"
+                        type="text"
+                        placeholder="Name"
+                        required={true}
+                        name={"name"}
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        className="border-none bg-slate"
+                        type="email"
+                        placeholder="Email"
+                        required={true}
+                        name={"email"}
+                      />
+                    </div>
+                  </div>
 
-            <div>
-              <Textarea
-                className="border-none bg-slate h-32"
-                placeholder="Message"
-                required={true}
-                name={"message"}
-              />
-            </div>
+                  <div>
+                    <Textarea
+                      className="border-none bg-slate h-32"
+                      placeholder="Message"
+                      required={true}
+                      name={"message"}
+                    />
+                  </div>
 
-            <div>
-              <Button
-                className="w-full"
-              >
-                Send Now
-              </Button>
-            </div>
-          </form>
+                  <div>
+                    <Button
+                      className="w-full"
+                    >
+                      Send Now
+                    </Button>
+                  </div>
+                </form>
+              </>
+            )
+          }
         </div>
 
         <div
