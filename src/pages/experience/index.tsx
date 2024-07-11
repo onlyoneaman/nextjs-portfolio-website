@@ -1,6 +1,7 @@
 import React from 'react';
 import {Experience} from "@/types";
 import experiencesData from "@/data/experiencesData.ts";
+import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
 
 const TimelineItem: React.FC<Experience> = (
   {
@@ -52,29 +53,27 @@ const TimelineItem: React.FC<Experience> = (
 
 const JourneyPage: React.FC = () => {
   return (
-    <div className="flex flex-col items-center p-4">
-      <header className="text-center py-8">
-        <h1 className="text-4xl font-bold">
-          {"Aman's Journey"}
-        </h1>
-        <p className="text-lg mt-2">
-          A timeline of my professional experiences and achievements.
-        </p>
-      </header>
-      <main className="w-full max-w-4xl mt-8">
-        <div className="timeline">
-          {experiencesData.map((exp, index) => (
-            <TimelineItem
-              key={index}
-              date={exp.date}
-              title={exp.title}
-              description={exp.description}
-              points={exp.points}
-              website={exp.website}
-            />
-          ))}
-        </div>
-      </main>
+    <div
+      className="mx-auto space-y-6"
+    >
+      <ContainerTitle title={"Aman's Journey"} />
+      <p>
+        A timeline of my professional experiences and achievements.
+      </p>
+      <div
+        className="flex min-w-full flex-col gap-4 py-5"
+      >
+        {experiencesData.map((exp, index) => (
+          <TimelineItem
+            key={index}
+            date={exp.date}
+            title={exp.title}
+            description={exp.description}
+            points={exp.points}
+            website={exp.website}
+          />
+        ))}
+      </div>
     </div>
   );
 };
