@@ -6,9 +6,9 @@ import BlogCard from '@/components/Blogs/BlogCard';
 import Image from "next/image";
 import {Button} from "@/components/ui/button.tsx";
 import SEO from "@/components/SEO.tsx";
-import remarkGfm from "remark-gfm";
 import ReactMarkdown from "react-markdown";
 import {Blog} from "@/types";
+import {getStyles} from "@/helpers/styleFunctions.ts";
 
 type BlogPostProps = {
   post: Blog;
@@ -36,9 +36,7 @@ const BlogPost = ({post}: BlogPostProps) => (
     }
 
     <div className="prose prose-invert prose-lg py-5">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-      >
+      <ReactMarkdown>
         {post.content}
       </ReactMarkdown>
     </div>
@@ -50,7 +48,9 @@ const BlogPost = ({post}: BlogPostProps) => (
             href={post.link}
             target={"_blank"}
           >
-            <Button>
+            <Button
+              className={getStyles('primary')}
+            >
               {post.label ?? "Visit"}
             </Button>
           </Link>

@@ -7,6 +7,7 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import {Button} from "@/components/ui/button";
 import SEO from "@/components/SEO.tsx";
 import {Project} from "@/types";
+import {getStyles} from "@/helpers/styleFunctions.ts";
 
 type ProjectsPostProps = {
   post: Project
@@ -43,11 +44,12 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
         {
           post.link && post.label && (
             <Link
-              className="text-white hover:text-oldsilver transition-colors"
               href={post.link}
               target={"_blank"}
             >
-              <Button>
+              <Button
+                className={getStyles("primary")}
+              >
                 {post.label || "Link"}
               </Button>
             </Link>
@@ -57,11 +59,12 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
         {
           post.secondaryLink && post.secondaryLabel && (
             <Link
-              className="text-white hover:text-oldsilver transition-colors"
               href={post.secondaryLink}
               target={"_blank"}
             >
-              <Button>
+              <Button
+                className={getStyles("secondary")}
+              >
                 {post.secondaryLabel}
               </Button>
             </Link>
