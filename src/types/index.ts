@@ -42,6 +42,6 @@ type Project = {
   content: string;
 }
 
-export {
+export type {
   Experience, RouteLink, Blog, Project
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Experience} from "@/types";
-import experiencesData from "@/pages/experience/experiencesData.ts";
+import experiencesData from "@/data/experiencesData.ts";
 
 const TimelineItem: React.FC<Experience> = (
   {

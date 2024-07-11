@@ -1,6 +1,5 @@
-import {ReactNode} from "react";
 
-const Container = ({children}: ReactNode) => {
+const Container = ({children}: any) => {
 
   return (
     <div
