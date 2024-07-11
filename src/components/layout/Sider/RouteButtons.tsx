@@ -4,10 +4,11 @@ import {IoHomeOutline, IoMailOutline, IoNavigate, IoPencilOutline} from "react-i
 import {FaRegUserCircle} from "react-icons/fa";
 import {FiTool} from "react-icons/fi";
 import {MdOutlineMapsHomeWork} from "react-icons/md";
+import {RouteLink} from "@/types";
 
 const RouteButtons = () => {
   const router = useRouter();
-  const links = [
+  const links: RouteLink[] = [
     {
       path: "/",
       name: "Home",
