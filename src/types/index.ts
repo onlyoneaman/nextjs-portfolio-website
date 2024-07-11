@@ -24,6 +24,7 @@ type Blog = {
   link?: string;
   label?: string;
   slug: string;
+  hidden?: boolean;
 }
 
 export {
