@@ -47,8 +47,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className={`flex self-end min-w-full grow p-5 flex-col border-t-[0.5px] 
-    text-gray-500 border-gray-700 space-x-3 gap-2 text-sm
+    <footer className={`flex self-end min-w-full grow p-3 sm:p-5 flex-col border-t-[0.5px] 
+    text-gray-500 border-gray-700 space-x-3 gap-2 text-xs sm:text-sm
     max-w-xl md:max-w-4xl mx-auto
     `}>
       {/*<div className="grid grid-cols-4 gap-8 mb-8 hidden">*/}

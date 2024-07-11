@@ -11,7 +11,7 @@ const AvatarBox = () => {
 
   return (
     <div
-      className="flex items-center justify-start space-x-3 mb-8 px-2"
+      className="flex items-center justify-start space-x-3 mb-4 sm:mb-8 px-2"
       onClick={() => returnToHome()}
     >
       <Avatar>
