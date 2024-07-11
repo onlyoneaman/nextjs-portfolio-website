@@ -78,7 +78,7 @@ type ProjectsPostListProps = {
 
 const ProjectsPostList = ({posts}: ProjectsPostListProps) => (
   <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-    {posts.map((post: any) => (
+    {posts.map((post: Project) => (
       <ProjectCard key={post.slug} item={post}/>
     ))}
   </div>

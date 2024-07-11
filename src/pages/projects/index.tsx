@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { getSortedPostsData } from '@/lib/projects';
+import {getSortedPostsData} from '@/lib/projects';
 import ProjectsList from "@/components/Projects/ProjectsList";
 import SEO from "@/components/SEO.tsx";
+import {Project} from "@/types";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -13,12 +14,16 @@ export async function getStaticProps() {
   };
 }
 
-const ProjectsHome = ({allPostsData}: any) => {
+type ProjectsHomeProps = {
+  allPostsData: Project[]
+}
+
+const ProjectsHome = ({allPostsData}: ProjectsHomeProps) => {
 
   return (
     <>
-      <SEO title={"Projects"} />
-      <ProjectsList posts={allPostsData} />
+      <SEO title={"Projects"}/>
+      <ProjectsList posts={allPostsData}/>
     </>
   )
 };
