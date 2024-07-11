@@ -36,6 +36,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
               item.link && (
                 <div>
                   <Button
+                    size={"sm"}
                     className="text-white hover:text-zinc-400"
                     onClick={(e) => {
                       e.preventDefault();
