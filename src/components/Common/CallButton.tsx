@@ -1,15 +1,22 @@
 import {Button} from "@/components/ui/button.tsx";
 import Link from "next/link";
+import {CommonButtonProps} from "@/types";
+import {getStyles} from "@/helpers/styleFunctions.ts";
 
-const CallButton = () => {
+const CallButton = (
+  {
+    variant = 'primary'
+  }: CommonButtonProps
+) => {
 
   return (
     <Link
-      className="text-white hover:text-oldsilver"
       href={'https://cal.com/amankumarai/15min'}
       target={"_blank"}
     >
-      <Button>
+      <Button
+        className={getStyles(variant)}
+      >
         15 minutes call
       </Button>
     </Link>

@@ -56,7 +56,7 @@ const HomePage = () => {
       <div
         className="flex items-center gap-3"
       >
-        <ContactButton/>
+        <ContactButton variant={"secondary"}/>
 
         <EmailButton/>
       </div>

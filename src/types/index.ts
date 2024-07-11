@@ -49,6 +49,10 @@ type Tool = {
   link: string;
 }
 
+type CommonButtonProps = {
+  variant?: 'primary' | 'secondary'
+}
+
 export type {
-  Experience, RouteLink, Blog, Project, Tool
+  Experience, RouteLink, Blog, Project, Tool, CommonButtonProps
 }

@@ -1,15 +1,24 @@
 import {Button} from "@/components/ui/button.tsx";
 import Link from "next/link";
+import {getStyles} from "@/helpers/styleFunctions.ts";
 
-const ContactButton = () => {
+type ContactButtonProps = {
+  variant?: 'primary' | 'secondary'
+}
 
+const ContactButton = (
+  {
+    variant = 'primary'
+  }: ContactButtonProps
+) => {
 
   return (
     <Link
-      className="text-white hover:text-oldsilver"
       href={'/contact'}
     >
-      <Button>
+      <Button
+        className={getStyles(variant)}
+      >
         Contact
       </Button>
     </Link>

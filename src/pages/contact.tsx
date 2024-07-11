@@ -46,7 +46,7 @@ const Contact = () => {
         <div
           className="flex space-x-4"
         >
-          <CallButton/>
+          <CallButton variant={"secondary"}/>
           <EmailButton/>
         </div>
         <div
