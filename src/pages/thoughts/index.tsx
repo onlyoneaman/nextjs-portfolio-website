@@ -32,7 +32,7 @@ const ThoughtsPage: React.FC<Props> = ({ thoughts }) => {
             className="p-4 md:p-5 bg-slate rounded-lg shadow-md"
           >
             <h2 className="text-sm text-white">
-              {moment(thought.date).format("MMM D, 'YY")}
+              {moment(thought.date).format("MMM D, YYYY")}
             </h2>
             <div
               className="prose"
