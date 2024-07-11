@@ -111,7 +111,7 @@ const Contact = () => {
 
                   <div>
                     <Button
-                      className="w-full"
+                      className="w-full hover:text-white hover:bg-slate"
                     >
                       Send Now
                     </Button>

@@ -65,6 +65,7 @@ const SubscribeCard = () => {
               required
             />
             <Button
+              className="hover:text-white hover:bg-slate"
               type="submit"
             >
               {"Subscribe"}
