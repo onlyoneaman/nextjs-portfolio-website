@@ -32,7 +32,7 @@ const ThoughtsPage: React.FC<Props> = ({ thoughts }) => {
             className="p-4 md:p-5 bg-slate rounded-lg shadow-md"
           >
             <h2 className="text-sm text-white">
-              {moment(thought.date).format("MMM D, YYYY")}
+              {moment(thought.date, "YYYY-MM-DD").format("MMM D, YYYY")}
             </h2>
             <div
               className="prose"
@@ -64,8 +64,12 @@ export async function getStaticProps() {
           .process(matterResult.content);
         const contentHtml = processedContent.toString();
 
+        // Ensure month and day are always two digits
+        const paddedMonth = month.padStart(2, '0');
+        const paddedDay = day.split('-')[0].padStart(2, '0');
+
         thoughts.push({
-          date: `${year}-${month}-${day.split('-')[0]}`,
+          date: `${year}-${paddedMonth}-${paddedDay}`,
           contentHtml,
         });
       }
