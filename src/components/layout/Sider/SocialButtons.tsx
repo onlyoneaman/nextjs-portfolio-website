@@ -2,36 +2,11 @@ import {
   FaGithub, FaInstagram, FaLinkedin, FaMedium, FaTwitter
 } from 'react-icons/fa'
 import {GoLinkExternal} from "react-icons/go";
+import socialLinks from "@/data/socialLinks.tsx";
 
 const SocialButtons = () => {
 
-  const socialLinks = [
-    {
-      icon: <FaTwitter/>,
-      title: "Twitter",
-      link: "https://twitter.com/onlyoneaman"
-    },
-    {
-      icon: <FaGithub/>,
-      title: "Github",
-      link: "https://github.com/onlyoneaman"
-    },
-    {
-      icon: <FaInstagram/>,
-      title: "Instagram",
-      link: "https://instagram.com/_a_gryffindor"
-    },
-    {
-      icon: <FaMedium/>,
-      title: "Medium",
-      link: "https://onlyoneaman.medium.com"
-    },
-    {
-      icon: <FaLinkedin/>,
-      title: "LinkedIn",
-      link: "https://linkedin.com/in/onlyoneaman"
-    }
-  ]
+  const links = socialLinks;
 
   return (
     <div
