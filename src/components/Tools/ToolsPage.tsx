@@ -1,6 +1,6 @@
 import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
 import ToolCard from "@/components/Tools/ToolCard.tsx";
-import toolsData from "@/components/Tools/toolsData";
+import toolsData from "@/data/toolsData.ts";
 
 const ToolsPage = () => {
 

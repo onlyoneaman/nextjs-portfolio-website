@@ -42,6 +42,13 @@ type Project = {
   content: string;
 }
 
+type Tool = {
+  title: string;
+  tag: string;
+  image: string;
+  link: string;
+}
+
 export type {
-  Experience, RouteLink, Blog, Project
+  Experience, RouteLink, Blog, Project, Tool
 }

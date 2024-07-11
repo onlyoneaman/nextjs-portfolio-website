@@ -1,4 +1,10 @@
-const ToolCard = ({tool}: { tool: { title: string, tag: string, image: string, link: string } }) => {
+import {Tool} from "@/types";
+
+type ToolCardProps = {
+  tool: Tool
+}
+
+const ToolCard = ({tool}: ToolCardProps) => {
 
   const openLink = () => {
     window.open(tool.link, "_blank");
@@ -11,7 +17,7 @@ const ToolCard = ({tool}: { tool: { title: string, tag: string, image: string, l
       onClick={() => openLink()}
     >
       <img
-        className="w-12 h-12 rounded-full"
+        className="w-12 h-12 rounded-md object-cover"
         src={"/images/tools/" + tool.image}
         alt={tool.title}
       />
