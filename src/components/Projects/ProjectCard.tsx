@@ -9,7 +9,7 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({item}: ProjectCardProps) => {
-  return(
+  return (
     <Link href={`/projects/${item.slug}`}>
       <Card className="bg-transparent border-transparent text-oldsilver hover:border-zinc-800 min-w-full">
         <CardHeader
@@ -18,19 +18,17 @@ const ProjectCard = ({item}: ProjectCardProps) => {
           <img
             src={item.image}
             alt={item.title}
-            className="max-w-52 min-w-52 h-32 object-cover rounded-md"
+            className="max-w-32 min-w-32 sm:max-w-52 sm:min-w-52 h-24 sm:h-32 object-cover rounded-md"
           />
           <div
-            className="flex flex-col justify-between"
+            className="flex flex-col justify-between gap-1"
           >
-            <div>
-              <h2 className="font-semibold text-white">
-                {item.title}
-              </h2>
-              <h4 className="text-xs">
-                {item.description}
-              </h4>
-            </div>
+            <h2 className="font-semibold text-white leading-none">
+              {item.title}
+            </h2>
+            <h4 className="text-xs line-clamp-2">
+              {item.description}
+            </h4>
 
             {
               item.link && (
@@ -40,7 +38,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
                     className="text-white hover:text-zinc-400"
                     onClick={(e) => {
                       e.preventDefault();
-                      if(item.link) {
+                      if (item.link) {
                         window.open(item.link, "_blank");
                       }
                     }}
