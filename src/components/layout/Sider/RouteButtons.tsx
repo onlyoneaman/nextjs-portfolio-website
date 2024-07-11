@@ -3,6 +3,7 @@ import {useRouter} from "next/router";
 import {IoHomeOutline, IoMailOutline, IoNavigate, IoPencilOutline} from "react-icons/io5";
 import {FaRegUserCircle} from "react-icons/fa";
 import {FiTool} from "react-icons/fi";
+import {MdOutlineMapsHomeWork} from "react-icons/md";
 
 const RouteButtons = () => {
   const router = useRouter();
@@ -10,32 +11,37 @@ const RouteButtons = () => {
     {
       path: "/",
       name: "Home",
-      icon: <IoHomeOutline />
+      icon: <IoHomeOutline/>
+    },
+    {
+      path: "/experience",
+      name: "Experience",
+      icon: <MdOutlineMapsHomeWork/>
     },
     {
       path: "/projects",
       name: "Projects",
-      icon: <IoNavigate />
+      icon: <IoNavigate/>
     },
     {
       path: "/blogs",
       name: "Blogs",
-      icon: <IoPencilOutline />
+      icon: <IoPencilOutline/>
     },
     {
       path: "/tools",
       name: "Tools",
-      icon: <FiTool />
+      icon: <FiTool/>
     },
     {
       path: "/about",
       name: "About",
-      icon: <FaRegUserCircle />
+      icon: <FaRegUserCircle/>
     },
     {
       path: "/contact",
       name: "Contact",
-      icon: <IoMailOutline />
+      icon: <IoMailOutline/>
     },
   ]
 
@@ -48,7 +54,7 @@ const RouteButtons = () => {
       {
         links.map((link, index) => {
           let active = activeLink.includes(link.path);
-          if(link.path == "/" && activeLink !== "/") {
+          if (link.path == "/" && activeLink !== "/") {
             active = false;
           }
           return (
