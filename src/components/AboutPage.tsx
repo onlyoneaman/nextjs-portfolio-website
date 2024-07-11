@@ -5,7 +5,7 @@ import GetInTouchButton from "@/components/Common/GetInTouchButton";
 const AboutPage = () => {
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="sm:w-[80%] mx-auto">
       <div
         className="space-y-5"
       >

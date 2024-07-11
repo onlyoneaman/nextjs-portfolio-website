@@ -14,7 +14,7 @@ const BlogPostList = ({posts}: BlogPostListProps) => {
 
   return (
     <div
-      className="mx-auto w-[80%] space-y-6"
+      className="mx-auto sm:w-[80%] space-y-6"
     >
       <ContainerTitle
         title="Pensieve"

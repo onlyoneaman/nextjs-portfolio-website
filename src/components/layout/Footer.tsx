@@ -21,11 +21,19 @@ const LiveTime = () => {
   );
 };
 
-const Footer = () => {
+type FooterProps = {
+  isMobile: boolean;
+};
+
+const Footer = (
+  {isMobile}: FooterProps
+) => {
+
   return (
     <footer className={`flex self-end min-w-full grow p-3 sm:p-5 flex-col border-t-[0.5px] 
     text-gray-500 border-gray-700 space-x-3 gap-2 text-xs sm:text-sm
     max-w-xl md:max-w-4xl mx-auto
+    ${isMobile ? "mb-20" : ""}
     `}>
       <div className="flex justify-between items-center border-t border-gray-800 pt-4">
         <div className="flex items-center">

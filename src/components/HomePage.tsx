@@ -7,7 +7,7 @@ const HomePage = () => {
 
   return (
     <div
-      className="w-[80%] mx-auto space-y-8"
+      className="sm:w-[80%] mx-auto space-y-8"
     >
       <div className="space-y-3">
         <ContainerTitle
