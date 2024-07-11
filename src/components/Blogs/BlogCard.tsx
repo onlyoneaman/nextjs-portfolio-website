@@ -2,8 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import {Card, CardHeader} from '@/components/ui/card';
 import Image from "next/image";
+import {Blog} from "@/types";
 
-const BlogCard = ({post}: any) => {
+type BlogCardProps = {
+  post: Blog
+}
+
+const BlogCard = ({post}: BlogCardProps) => {
   return(
     <Link href={`/blogs/${post.slug}`}>
       <Card className="text-oldsilver bg-transparent border-transparent hover:border-zinc-800 min-w-full">
@@ -13,7 +18,7 @@ const BlogCard = ({post}: any) => {
           {(post.cardImage || post.image) ? (
             <Image
               className="rounded-md"
-              src={post.cardImage || post.image}
+              src={post.cardImage || post.image || ""}
               alt={post.title}
               width={144}
               height={96}

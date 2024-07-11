@@ -1,8 +1,9 @@
 import React from 'react';
 import BlogPostList from "@/components/Blogs/BlogPostList";
 
-import { getSortedPostsData } from '@/lib/blogs';
+import {getSortedPostsData} from '@/lib/blogs';
 import SEO from "@/components/SEO.tsx";
+import {Blog} from "@/types";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -13,12 +14,16 @@ export async function getStaticProps() {
   };
 }
 
-const BlogsList = ({allPostsData}: any) => {
+type BlogsListProps = {
+  allPostsData: Blog[];
+};
+
+const BlogsList = ({allPostsData}: BlogsListProps) => {
 
   return (
     <>
-      <SEO title={"Blogs"} />
-      <BlogPostList posts={allPostsData} />
+      <SEO title={"Blogs"}/>
+      <BlogPostList posts={allPostsData}/>
     </>
   )
 };
