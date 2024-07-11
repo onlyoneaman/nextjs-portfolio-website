@@ -30,11 +30,6 @@ const RouteButtons = () => {
       icon: <IoPencilOutline/>
     },
     {
-      path: "/tools",
-      name: "Tools",
-      icon: <FiTool/>
-    },
-    {
       path: "/about",
       name: "About",
       icon: <FaRegUserCircle/>
@@ -43,6 +38,11 @@ const RouteButtons = () => {
       path: "/contact",
       name: "Contact",
       icon: <IoMailOutline/>
+    },
+    {
+      path: "/tools",
+      name: "Tools",
+      icon: <FiTool/>
     },
   ]
 
