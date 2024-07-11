@@ -1,8 +1,13 @@
 import React from 'react';
 import ContainerTitle from "@/components/Common/ContainerTitle";
 import ProjectCard from "@/components/Projects/ProjectCard";
+import {Project} from "@/types";
 
-const ProjectsList = ({ posts }: any) => {
+type ProjectsListProps = {
+  posts: Project[]
+}
+
+const ProjectsList = ({ posts }: ProjectsListProps) => {
   if (!posts || posts.length === 0) {
     return <p>No projects found.</p>;
   }
@@ -20,8 +25,8 @@ const ProjectsList = ({ posts }: any) => {
       <div
         className="flex min-w-full flex-col gap-4"
       >
-        {posts.map((post: any) => (
-          <ProjectCard key={post.slug} post={post} />
+        {posts.map((post: Project) => (
+          <ProjectCard key={post.slug} item={post} />
         ))}
       </div>
     </div>

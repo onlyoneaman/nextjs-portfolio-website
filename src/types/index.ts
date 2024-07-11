@@ -27,6 +27,21 @@ type Blog = {
   hidden?: boolean;
 }
 
+type Project = {
+  title: string;
+  description: string;
+  date: string;
+  tags?: string[];
+  image: string;
+  link?: string;
+  label?: string;
+  slug: string;
+  hidden?: boolean;
+  secondaryLink?: string;
+  secondaryLabel?: string;
+  content: string;
+}
+
 export {
-  Experience, RouteLink, Blog
+  Experience, RouteLink, Blog, Project
 }
