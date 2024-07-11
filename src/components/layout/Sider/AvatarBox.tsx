@@ -37,6 +37,7 @@ const AvatarBox = () => {
               "Problem Solver",
               "FullStack Dev"
             ]}
+            loop
             cursor
           />
         </span>

@@ -22,6 +22,7 @@ const HomePage = () => {
           >
             <Typewriter
               words={['Code', 'Design', 'Build', 'Innovate']}
+              loop={true}
               cursor
             />
           </span>
