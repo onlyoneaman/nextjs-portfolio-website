@@ -15,7 +15,7 @@ const LiveTime = () => {
   }, []);
 
   return (
-    <div className="text-sm text-gray-600 font-light w-20">
+    <div className="text-lg text-white font-light w-20">
       {currentTime}
     </div>
   );
