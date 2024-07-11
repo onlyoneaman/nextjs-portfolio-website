@@ -5,6 +5,7 @@ import {FaRegUserCircle} from "react-icons/fa";
 import {FiTool} from "react-icons/fi";
 import {MdOutlineMapsHomeWork} from "react-icons/md";
 import {RouteLink} from "@/types";
+import {IoIosCloudOutline} from "react-icons/io";
 
 const RouteButtons = () => {
   const router = useRouter();
@@ -44,6 +45,11 @@ const RouteButtons = () => {
       name: "Tools",
       icon: <FiTool/>
     },
+    {
+      path: "/thoughts",
+      name: "Thoughts",
+      icon: <IoIosCloudOutline />
+    }
   ]
 
   const activeLink = router.pathname;
