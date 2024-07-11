@@ -39,15 +39,20 @@ const Footer = (
         <div className="flex items-center">
           {/*<span className="text-blue-400 mr-2">Currently</span>*/}
           <Link
-            className="text-gray-400"
+            className="text-gray-400 hover:text-gray-200 hover:underline transition-colors duration-300 ease-in-out"
             href={"/contact"}
           >
             Reach out →
           </Link>
         </div>
 
-        <div>
-          Made by Aman | 2024 amankumar.ai
+        <div className="space-x-1">
+          <span className="hidden sm:inline-block">
+            Made by Aman |
+          </span>
+          <span>
+            2024 amankumar.ai
+          </span>
         </div>
 
         <LiveTime />
