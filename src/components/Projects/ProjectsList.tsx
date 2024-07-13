@@ -1,7 +1,8 @@
 import React from 'react';
 import ContainerTitle from "@/components/Common/ContainerTitle";
 import ProjectCard from "@/components/Projects/ProjectCard";
-import {Project} from "@/types";
+
+import {Project} from "@/types/project.ts";
 
 type ProjectsListProps = {
   posts: Project[]

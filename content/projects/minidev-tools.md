@@ -9,6 +9,7 @@ label: 'Visit'
 secondaryLink: 'https://github.com/onlyoneaman/minidev-tools'
 secondaryLabel: 'GitHub'
 image: "/content/projects/minidevtools/index.png"
+status: 'active'
 ---
 
 Open source collection of mini dev tools. No Ads, No Complex UI, Simple and Efficient UI.

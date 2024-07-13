@@ -7,6 +7,7 @@ techStack: ['React', 'Instagram', 'Chrome Extension']
 image: "/content/projects/growpad/banner.png"
 link: "https://chrome-stats.com/d/nbkccjplkaihiekbckmalilcndjhkaff"
 label: "Archive"
+status: "archived"
 ---
 
 ## Chrome extension | Grew to $3k MRR | Shut Down

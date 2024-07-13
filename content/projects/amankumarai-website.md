@@ -7,6 +7,7 @@ techStack: ['React', "NextJS", "TailwindCSS", "ShadCN"]
 link: 'https://next.amankumar.ai'
 label: 'Visit'
 image: "/content/projects/amankumar-website.png"
+status: "active"
 ---
 
 ## Aman Kumar's Personal Website

@@ -3,7 +3,8 @@ import React from 'react';
 import {getSortedPostsData} from '@/lib/projects';
 import ProjectsList from "@/components/Projects/ProjectsList";
 import SEO from "@/components/SEO.tsx";
-import {Project} from "@/types";
+
+import {Project} from "@/types/project.ts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

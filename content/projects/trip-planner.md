@@ -7,6 +7,7 @@ techStack: ['React', 'Gemini']
 link: 'https://trip.amankumar.ai/'
 label: 'Link'
 image: "/content/projects/trip-planner.png"
+status: "active"
 ---
 
 ## Gemini based Trip Planner

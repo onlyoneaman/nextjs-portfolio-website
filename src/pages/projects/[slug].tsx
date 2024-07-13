@@ -3,9 +3,9 @@ import {useRouter} from 'next/router';
 import Link from 'next/link';
 import {getPostData, getSortedPostsData} from '@/lib/projects';
 import SEO from "@/components/SEO.tsx";
-import {Project} from "@/types";
 import ProjectsPost from "@/components/Projects/ProjectsPost.tsx";
 import ProjectsList from "@/components/Projects/ProjectsList.tsx";
+import {Project} from "@/types/project.ts";
 
 type ProjectPageProps = {
   posts: Project[]

@@ -9,6 +9,7 @@ label: 'Link'
 image: "/content/projects/wlancred.png"
 secondaryLink: "https://github.com/onlyoneaman/iitj-wlan-firewall-login"
 secondaryLabel: "Github Link"
+status: 'archived'
 ---
 
 ## WLAN Cred IITJ

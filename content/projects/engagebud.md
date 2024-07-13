@@ -7,6 +7,7 @@ techStack: ['Shopify', 'React', 'Typescript', 'Ruby on Rails', 'Tailwind CSS']
 link: 'https://engagebud.com/'
 label: 'Link'
 image: "/content/projects/engagebud.png"
+status: "active"
 ---
 
 ## Increase Conversion with Engagement

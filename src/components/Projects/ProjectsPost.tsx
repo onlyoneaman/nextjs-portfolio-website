@@ -1,10 +1,10 @@
-import {Project} from "@/types";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import {Button} from "@/components/ui/button.tsx";
 import {getStyles} from "@/helpers/styleFunctions.ts";
 import React from "react";
 import {Badge} from "@/components/ui/badge.tsx";
+import {Project} from "@/types/project.ts";
 
 type ProjectsPostProps = {
   post: Project

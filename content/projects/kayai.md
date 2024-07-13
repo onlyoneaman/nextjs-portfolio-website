@@ -7,6 +7,7 @@ techStack: ['React', 'AI', 'Tailwind CSS', 'Python', 'Playwright']
 link: 'https://kay.ai/'
 label: 'Link'
 image: "/content/projects/kayai.png"
+status: "active"
 ---
 
 ## Hire AI Co-workers for Submissions

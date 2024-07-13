@@ -9,6 +9,7 @@ label: 'Link'
 image: "/content/projects/crux_dashboard.png"
 secondaryLink: "https://github.com/onlyoneaman/crux-dash-launcher"
 secondaryLabel: "Github Link"
+status: "active"
 ---
 
 ## A Simple Dashboard Launcher for Crux

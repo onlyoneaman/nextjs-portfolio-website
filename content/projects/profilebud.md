@@ -7,6 +7,7 @@ techStack: ['React', 'Instagram', 'Chrome Extension']
 image: "/content/projects/profilebud-banner.png"
 link: "https://chrome-stats.com/d/geanmonfjnphmeighphheddlmdlcjkho"
 label: "Archive"
+status: "archived"
 ---
 
 ### Chrome extension joined as an Frontend Intern while in College | Later, Took over the frontend and backend | Grew it to ~$8k MRR | Exited

@@ -7,6 +7,7 @@ techStack: ['React', 'Tailwind CSS', 'Typescript', 'Node', 'Ruby on Rails']
 link: 'https://dreamboat.ai/'
 label: 'Link'
 image: "/content/projects/dreamboatai.png"
+status: "archived"
 ---
 
 ## LLMOps Platform for building High Quality Production AI Apps.

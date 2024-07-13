@@ -7,6 +7,7 @@ techStack: ['React', 'Spotify API', 'Tailwind CSS']
 link: 'https://auris.amankumar.ai'
 label: 'Visit'
 image: "/content/projects/auris/auris.png"
+status: "active"
 ---
 
 I am a big time spotify user, and wanna dive into my granular spotify / music listening trends stats. Auris helps you see your top tracks, artists, genres across different timelines.
