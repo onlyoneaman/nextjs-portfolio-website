@@ -18,6 +18,7 @@ const BlogCard = ({post}: BlogCardProps) => {
     cardImage,
     type,
     slug,
+    highlight
   } = post;
 
   return (
@@ -48,6 +49,9 @@ const BlogCard = ({post}: BlogCardProps) => {
               <h2 className="font-semibold text-white line-clamp-1">
                 {title}
               </h2>
+              <h3 className="text-sm text-zinc-200 line-clamp-1">
+                {highlight}
+              </h3>
               <h4 className="text-xs line-clamp-2">
                 {description}
               </h4>

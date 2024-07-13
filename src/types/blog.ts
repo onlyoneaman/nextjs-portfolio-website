@@ -12,6 +12,7 @@ type BlogTypeEnum = BlogExperienceEnum | BlogProjectEnum | BlogThoughtEnum | Blo
 type Blog = {
   title: string;
   description: string;
+  highlight?: string;
   date: string;
   image?: string;
   cardImage?: string;
