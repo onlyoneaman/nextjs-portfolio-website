@@ -19,7 +19,10 @@ const ProjectCard = ({item}: ProjectCardProps) => {
     tags,
     slug,
     label,
+    secondaryLabel,
+    secondaryLink
   } = item;
+  const secondaryButton = secondaryLink && secondaryLabel;
 
   const getStatusTagStyle = () => {
     switch (status) {
@@ -60,36 +63,55 @@ const ProjectCard = ({item}: ProjectCardProps) => {
             </div>
 
             <div className="space-y-1">
-              {
-                link && (
-                  <div className="flex flex-row items-center justify-between gap-2">
-                    <Button
-                      size={"sm"}
-                      className="text-white hover:text-zinc-400 h-6"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        if (link) {
-                          window.open(link, "_blank");
-                        }
-                      }}
-                    >
-                      {label || "Visit"}
-                    </Button>
-
-                    {
-                      status && (
-                        <span
-                          className={
-                            `text-xs px-2 py-0.5 rounded-full text-black ${getStatusTagStyle()}`
+              <div className="flex flex-row items-center justify-between gap-2">
+                <div className="space-x-2">
+                  {
+                    link && (
+                      <Button
+                        size={"sm"}
+                        className="text-white hover:text-zinc-400 h-6"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          if (link) {
+                            window.open(link, "_blank");
                           }
-                        >
-                          {status}
-                        </span>
-                      )
-                    }
-                  </div>
-                )
-              }
+                        }}
+                      >
+                        {label || "Visit"}
+                      </Button>
+                    )
+                  }
+
+                  {
+                    secondaryButton && (
+                      <Button
+                        size={"sm"}
+                        className="text-white hover:text-zinc-400 h-6"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          if (secondaryLink) {
+                            window.open(secondaryLink, "_blank");
+                          }
+                        }}
+                      >
+                        {secondaryLabel || "Secondary"}
+                      </Button>
+                    )
+                  }
+                </div>
+
+                {
+                  status && (
+                    <span
+                      className={
+                        `text-xs px-2 py-0.5 rounded-full text-black ${getStatusTagStyle()}`
+                      }
+                    >
+                      {status}
+                    </span>
+                  )
+                }
+              </div>
 
               <div>
                 <div
