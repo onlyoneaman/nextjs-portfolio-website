@@ -3,6 +3,7 @@ title: 'My First Blog Post'
 description: 'This is the content of my first blog post.'
 date: '2023-06-27'
 hidden: True
+type: "other"
 ---
 
 # Welcome to my blog!

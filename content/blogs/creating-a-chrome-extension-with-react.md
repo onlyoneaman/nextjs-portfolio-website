@@ -2,6 +2,7 @@
 title: 'Creating a Chrome Extension with React'
 description: 'A step-by-step guide to building a Chrome extension using React'
 date: '2021-02-05'
+type: "tutorial"
 image: '/content/blogs/creating-a-chrome-extension-with-react.png'
 link: 'https://javascript.plainenglish.io/creating-a-chrome-extension-with-react-d92db20550cb?gi=00240dd2868e'
 ---

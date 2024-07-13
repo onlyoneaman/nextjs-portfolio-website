@@ -1,7 +1,8 @@
 import React from 'react';
 import BlogCard from "@/components/Blogs/BlogCard";
 import ContainerTitle from "@/components/Common/ContainerTitle";
-import {Blog} from "@/types";
+
+import {Blog} from "@/types/blog.ts";
 
 type BlogPostListProps = {
   posts: Blog[];

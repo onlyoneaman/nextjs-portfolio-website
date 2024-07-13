@@ -1,4 +1,3 @@
-import {Blog} from "@/types";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
@@ -6,6 +5,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {getStyles} from "@/helpers/styleFunctions.ts";
 import React from "react";
 import {readingTime} from 'reading-time-estimator'
+import {Blog} from "@/types/blog.ts";
 
 type BlogPostProps = {
   post: Blog;

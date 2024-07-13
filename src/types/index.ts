@@ -18,19 +18,6 @@ type RouteLink = {
   icon: JSX.Element;
 }
 
-type Blog = {
-  title: string;
-  description: string;
-  date: string;
-  image?: string;
-  cardImage?: string;
-  content: string;
-  link?: string;
-  label?: string;
-  slug: string;
-  hidden?: boolean;
-}
-
 type Project = {
   title: string;
   description: string;
@@ -59,5 +46,5 @@ type CommonButtonProps = {
 }
 
 export type {
-  Experience, RouteLink, Blog, Project, Tool, CommonButtonProps
+  Experience, RouteLink, Project, Tool, CommonButtonProps
 }

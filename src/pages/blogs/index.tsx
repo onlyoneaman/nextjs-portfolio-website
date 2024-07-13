@@ -3,7 +3,8 @@ import BlogPostList from "@/components/Blogs/BlogPostList";
 
 import {getSortedPostsData} from '@/lib/blogs';
 import SEO from "@/components/SEO.tsx";
-import {Blog} from "@/types";
+
+import {Blog} from "@/types/blog.ts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

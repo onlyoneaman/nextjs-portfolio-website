@@ -3,9 +3,9 @@ import {useRouter} from 'next/router';
 import Link from 'next/link';
 import {getPostData, getSortedPostsData} from '@/lib/blogs';
 import SEO from "@/components/SEO.tsx";
-import {Blog} from "@/types";
 import BlogPostList from "@/components/Blogs/BlogPostList.tsx";
 import BlogPost from "@/components/Blogs/BlogPost.tsx";
+import {Blog} from "@/types/blog.ts";
 
 type BlogsPageProps = {
   posts: Blog[];

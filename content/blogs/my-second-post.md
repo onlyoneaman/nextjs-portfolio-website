@@ -2,6 +2,7 @@
 title: 'My Second Blog Post'
 date: '2023-06-28'
 hidden: True
+type: "other"
 ---
 
 # Welcome to my blog!

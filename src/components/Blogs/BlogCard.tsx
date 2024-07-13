@@ -1,27 +1,37 @@
 import React from 'react';
 import Link from 'next/link';
 import {Card, CardHeader} from '@/components/ui/card';
-import Image from "next/image";
-import {Blog} from "@/types";
+import {Blog} from "@/types/blog.ts";
+import moment from "moment";
 
 type BlogCardProps = {
   post: Blog
 }
 
 const BlogCard = ({post}: BlogCardProps) => {
-  return(
-    <Link href={`/blogs/${post.slug}`}>
+  const {
+    date,
+    title,
+    description,
+    image,
+    cardImage,
+    type,
+    slug,
+  } = post;
+
+  return (
+    <Link href={`/blogs/${slug}`}>
       <Card
         className="text-oldsilver bg-transparent border-transparent hover:border-zinc-800 min-w-full h-full"
       >
         <CardHeader
           className="flex flex-col p-2 gap-2"
         >
-          {(post.cardImage || post.image) ? (
+          {(cardImage || image) ? (
             <img
               className="rounded-md object-cover h-24 sm:h-36 md:h-48"
-              src={post.cardImage || post.image || ""}
-              alt={post.title}
+              src={cardImage || image || ""}
+              alt={title}
             />
           ) : (
             <div className="min-w-36 h-24 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-md"></div>
@@ -30,11 +40,24 @@ const BlogCard = ({post}: BlogCardProps) => {
             className="flex flex-col gap-1"
           >
             <h2 className="font-semibold text-white line-clamp-1">
-              {post.title}
+              {title}
             </h2>
             <h4 className="text-xs line-clamp-2">
-              {post.description}
+              {description}
             </h4>
+
+            <div
+              className="flex gap-2 items-center justify-between text-xs text-zinc-400"
+            >
+              <span>
+                {moment(date).format("MMM DD, YYYY")}
+              </span>
+              <span
+                className="bg-zinc-800 text-white rounded-md px-2 py-1"
+              >
+                {type}
+              </span>
+            </div>
           </div>
         </CardHeader>
       </Card>

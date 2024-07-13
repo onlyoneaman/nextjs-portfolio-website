@@ -2,6 +2,7 @@
 title: 'Essential Books for Aspiring World-Class Programmers'
 description: 'To become a world-class programmer, building a strong foundation of knowledge and skills is crucial. Here are some essential books that can help you achieve that goal.'
 date: '2023-06-26'
+type: "tutorial"
 cardImage: '/content/blogs/books.png'
 ---
 

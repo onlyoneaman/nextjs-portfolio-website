@@ -3,6 +3,7 @@ title: 'Public APIs'
 description: 'Discover 10 essential public APIs for your tech projects, covering everything from global data and music to space exploration and more. Enhance your apps with APIs for countries, plants, NASA, Spotify, news, sunrise/sunset, Pokémon, movies, and pet facts. Ideal for developers seeking to add unique data and functionality.'
 date: '2023-06-27'
 image: '/content/blogs/public-apis.png'
+type: "tutorial"
 ---
 
 10 Public APIs to Elevate Your Next Project
