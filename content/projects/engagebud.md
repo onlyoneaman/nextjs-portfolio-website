@@ -1,6 +1,7 @@
 ---
 title: 'Engagebud'
 description: 'Engagebud increases Conversions with Engagement for every step of your Customer Journey.'
+highlight: "Raised $100K | 11M+ Users | 5M+ Discount Codes"
 date: '2022-8-15'
 tags: ['Work', 'Shopify']
 techStack: ['Shopify', 'React', 'Typescript', 'Ruby on Rails', 'Tailwind CSS']

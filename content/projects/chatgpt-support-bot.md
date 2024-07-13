@@ -1,6 +1,7 @@
 ---
 title: 'ChatGPT Based Support Bot'
-description: 
+description: ''
+highlight: '3K+ Views'
 date: '2023-04-29'
 tags: ['Personal', 'AI']
 techStack: ['Python', 'OpenAI', 'Flask']
