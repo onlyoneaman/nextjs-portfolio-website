@@ -2,7 +2,8 @@
 title: 'amankumar.ai Website | Aman Kumar'
 description: 'Personal website of Aman Kumar, a software engineer, and a tech enthusiast.'
 date: '2024-07-11'
-tags: ['React', "NextJS", "TailwindCSS", "ShadCN"]
+tags: ["Personal"]
+techStack: ['React', "NextJS", "TailwindCSS", "ShadCN"]
 link: 'https://next.amankumar.ai'
 label: 'Visit'
 image: "/content/projects/amankumar-website.png"

@@ -2,7 +2,8 @@
 title: 'Trip Planner'
 description: 'Gemini based Trip Planner'
 date: '2023-12-14'
-tags: ['React', 'Gemini']
+tags: ['Personal', 'AI']
+techStack: ['React', 'Gemini']
 link: 'https://trip.amankumar.ai/'
 label: 'Link'
 image: "/content/projects/trip-planner.png"

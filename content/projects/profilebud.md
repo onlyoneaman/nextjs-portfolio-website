@@ -2,7 +2,8 @@
 title: 'Profilebud | Instagram Data Scraper'
 description: 'Chrome extension that extracts leads from Instagram using logged in IG account'
 date: '2021-6-15'
-tags: ['React', 'Instagram', 'Chrome Extension']
+tags: ['Work', 'Instagram', 'Chrome Extension']
+techStack: ['React', 'Instagram', 'Chrome Extension']
 image: "/content/projects/profilebud-banner.png"
 link: "https://chrome-stats.com/d/geanmonfjnphmeighphheddlmdlcjkho"
 label: "Archive"

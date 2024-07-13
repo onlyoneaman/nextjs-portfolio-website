@@ -2,7 +2,8 @@
 title: 'Dreamboat AI'
 description: 'LLMOps Platform for building High Quality Production AI Apps.'
 date: '2023-7-25'
-tags: ['React']
+tags: ['Work', 'AI']
+techStack: ['React', 'Tailwind CSS', 'Typescript', 'Node', 'Ruby on Rails']
 link: 'https://dreamboat.ai/'
 label: 'Link'
 image: "/content/projects/dreamboatai.png"

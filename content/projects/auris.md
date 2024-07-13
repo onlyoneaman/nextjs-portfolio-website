@@ -2,7 +2,8 @@
 title: 'Auris - Advances Spotify Analytics'
 description: 'Auris helps you see your top track, artists, genres across different timelines. Recommend music based on your settings.'
 date: '2024-03-10'
-tags: ['React']
+tags: ['Personal', 'Music']
+techStack: ['React', 'Spotify API', 'Tailwind CSS']
 link: 'https://auris.amankumar.ai'
 label: 'Visit'
 image: "/content/projects/auris/auris.png"

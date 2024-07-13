@@ -2,7 +2,8 @@
 title: 'Kay AI'
 description: 'Hire AI Co-workers for Submissions'
 date: '2024-4-10'
-tags: ['React', 'AI']
+tags: ['Work', 'AI']
+techStack: ['React', 'AI', 'Tailwind CSS', 'Python', 'Playwright']
 link: 'https://kay.ai/'
 label: 'Link'
 image: "/content/projects/kayai.png"

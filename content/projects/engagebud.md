@@ -2,7 +2,8 @@
 title: 'Engagebud'
 description: 'Engagebud increases Conversions with Engagement for every step of your Customer Journey.'
 date: '2022-8-15'
-tags: ['React', 'Shopify']
+tags: ['Work', 'Shopify']
+techStack: ['Shopify', 'React', 'Typescript', 'Ruby on Rails', 'Tailwind CSS']
 link: 'https://engagebud.com/'
 label: 'Link'
 image: "/content/projects/engagebud.png"

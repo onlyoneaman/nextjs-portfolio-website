@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {Card, CardHeader} from '@/components/ui/card';
 import {Button} from "@/components/ui/button";
 import {Project} from "@/types";
+import {Badge} from "@/components/ui/badge.tsx";
 
 type ProjectCardProps = {
   item: Project
@@ -24,12 +25,25 @@ const ProjectCard = ({item}: ProjectCardProps) => {
             className="flex flex-col justify-between gap-1"
           >
             <div className={"space-y-1"}>
-              <h2 className="font-semibold text-white leading-none">
+              <h2 className="font-semibold text-white leading-none line-clamp-1">
                 {item.title}
               </h2>
               <h4 className="text-xs line-clamp-2">
                 {item.description}
               </h4>
+
+              <div
+                className="flex gap-1"
+              >
+                {item.tags?.map((tag, index) => (
+                  <span
+                    className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
+                    key={tag}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
 
             {

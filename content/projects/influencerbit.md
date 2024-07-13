@@ -2,7 +2,8 @@
 title: 'Influencerbit'
 description: 'Influencerbit is a platform that connects brands with influencers.'
 date: '2022-1-15'
-tags: ['React', 'Shopify']
+tags: ['Work', 'Shopify']
+techStack: ['React', 'Shopify']
 link: 'https://influencerbit.com/'
 label: 'Link'
 image: "/content/projects/influencerbit.png"

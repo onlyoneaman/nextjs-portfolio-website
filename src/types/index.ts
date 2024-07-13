@@ -33,6 +33,7 @@ type Project = {
   description: string;
   date: string;
   tags?: string[];
+  techStack?: string[];
   image: string;
   link?: string;
   label?: string;

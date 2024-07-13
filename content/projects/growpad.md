@@ -2,7 +2,8 @@
 title: 'Growpad | Organic Instagram Automation'
 description: 'Organically grow your instagram account by auto engaging with target audience'
 date: '2021-6-25'
-tags: ['React', 'Instagram', 'Chrome Extension']
+tags: ['Work', 'Instagram', 'Chrome Extension']
+techStack: ['React', 'Instagram', 'Chrome Extension']
 image: "/content/projects/growpad/banner.png"
 link: "https://chrome-stats.com/d/nbkccjplkaihiekbckmalilcndjhkaff"
 label: "Archive"

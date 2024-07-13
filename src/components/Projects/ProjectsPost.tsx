@@ -4,6 +4,7 @@ import Link from "next/link";
 import {Button} from "@/components/ui/button.tsx";
 import {getStyles} from "@/helpers/styleFunctions.ts";
 import React from "react";
+import {Badge} from "@/components/ui/badge.tsx";
 
 type ProjectsPostProps = {
   post: Project
@@ -12,7 +13,7 @@ type ProjectsPostProps = {
 const ProjectsPost = ({post}: ProjectsPostProps) => {
 
   return (
-    <div className="mx-auto mt-4 space-y-3">
+    <div className="mx-auto mt-2 space-y-3">
       <h1 className="text-3xl font-bold text-white">
         {post.title}
       </h1>
@@ -20,6 +21,20 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
         {post.description}
       </h3>
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
+
+      <div
+        className="flex gap-1"
+      >
+        {post.techStack?.map((tag, index) => (
+          <Badge
+            key={tag}
+            variant={"secondary"}
+          >
+            {tag}
+          </Badge>
+        ))}
+      </div>
+
       {
         post.image && (
           <img
@@ -32,6 +47,19 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
 
       <div className="prose prose-invert prose-lg py-5">
         <ReactMarkdown>{post.content}</ReactMarkdown>
+      </div>
+
+      <div
+        className="flex gap-1"
+      >
+        {post.tags?.map((tag, index) => (
+          <span
+            className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
+            key={tag}
+          >
+            {tag}
+          </span>
+        ))}
       </div>
 
       <div
