@@ -13,7 +13,7 @@ const JourneyPage: React.FC = () => {
         A timeline of my professional experiences.
       </p>
       <div
-        className="flex min-w-full flex-col gap-4 py-5"
+        className="flex min-w-full flex-col gap-6 py-5"
       >
         {experiencesData.map((exp, index) => (
           <TimelineItem

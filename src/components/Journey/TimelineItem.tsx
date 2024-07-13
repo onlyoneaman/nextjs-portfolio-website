@@ -15,25 +15,30 @@ const TimelineItem: React.FC<TimelineItemProps> = (
     description,
     website,
     points,
-    fullLogo
+    fullLogo,
+    role,
+    companyName,
+    techStack
   } = item;
 
   return (
-    <div className="timeline-item mb-8">
-      <div className="timeline-item-content bg-slate p-6 rounded-lg shadow-md relative">
+    <div className="bg-slate p-6 rounded-lg shadow-md relative text-md">
       <span
-        className="tag bg-oldsilver text-white px-3 py-1 rounded-full absolute top-0 left-0 transform -translate-y-1/2"
+        className="text-xs bg-oldsilver text-white px-3 py-1 rounded-full absolute top-0 left-0 transform -translate-y-1/2"
       >
         {date}
       </span>
+      <div
+        className="relative space-y-1"
+      >
         <a
-          className="flex flex-row items-center justify-between w-full"
+          className="flex flex-row gap-3 items-center justify-between w-full"
           href={website}
           target={'_blank'}
           rel={'noopener noreferrer'}
         >
           <h3
-            className="text-xl hover:underline text-white font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
+            className="text-md md:text-xl hover:underline text-white font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             {title}
           </h3>
@@ -43,7 +48,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
               <img
                 src={fullLogo}
                 alt={title}
-                className="w-12 md:w-32 object-cover"
+                className="w-24 md:w-32 object-cover"
               />
             )
           }
@@ -67,10 +72,31 @@ const TimelineItem: React.FC<TimelineItemProps> = (
             </ul>
           )}
         </div>
-        <span
-          className="circle w-4 h-4 bg-oldsilver absolute top-0 left-0 transform -translate-x-1/2 rounded-full"
-        />
+        <div
+          className="text-xs text-gray-300 space-x-1"
+        >
+          <span>
+            Tech Stack:
+          </span>
+          {
+            techStack.map((tech, index) => (
+              <>
+                <span
+                  key={index}
+                >
+                  {tech}
+                </span>
+                {index < techStack.length - 1 && (
+                  <span>•</span>
+                )}
+              </>
+            ))
+          }
+        </div>
       </div>
+      <span
+        className="circle w-4 h-4 bg-oldsilver absolute top-0 left-0 transform -translate-x-1/2 rounded-full"
+      />
     </div>
   )
 };

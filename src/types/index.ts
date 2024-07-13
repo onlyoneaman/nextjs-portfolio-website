@@ -1,12 +1,14 @@
 import {JSX} from "react";
-import {TravelStatus} from "@/types/enums.ts";
 
 type Experience = {
   date: string;
   title: string;
   description: string;
+  role: string;
+  companyName: string;
   website: string;
   points: string[];
+  techStack: string[];
   fullLogo?: string;
 };
 
