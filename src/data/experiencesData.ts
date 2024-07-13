@@ -6,6 +6,7 @@ const experiencesData: Experience[] = [
     title: 'Founding Product Engineer at KAY.AI',
     description: 'Building automation tools for financial institutions, led frontend and design.',
     website: 'https://kay.ai',
+    fullLogo: '/images/companies/kay.png',
     points: [
       'Building the next-gen automation tool for financial institutions.',
       'Leading Frontend and Design.',
@@ -18,6 +19,7 @@ const experiencesData: Experience[] = [
     title: 'Co-Founder / CTO at DreamboatAI',
     description: 'Designed and developed LLMOps Platform, built multiple LLM apps, created proxy middleware.',
     website: 'https://dreamboat.ai',
+    fullLogo: '/images/companies/dreamboatai.png',
     points: [
       'Led the team for the design and development of LLMOps Platform to help monitor, manage, and debug LLM apps.',
       'Built a proxy middleware using Cloudflare Workers achieving under 20ms latency.',
@@ -32,6 +34,7 @@ const experiencesData: Experience[] = [
     title: 'Co-Founder / CTO at EngageBud',
     description: 'Developed Influencerbit and Engagebud, handled 11M+ users, raised $100K funding.',
     website: 'https://engagebud.com',
+    fullLogo: '/images/companies/engagebud.png',
     points: [
       'Led the team to design and develop the full stack of Influencerbit - Customer Led Influencer Marketing Platform for E-Commerce Brands.',
       'Built Engagebud - Gamification Platform for E-Com Brands.',

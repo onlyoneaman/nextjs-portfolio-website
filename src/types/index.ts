@@ -7,6 +7,7 @@ type Experience = {
   description: string;
   website: string;
   points: string[];
+  fullLogo?: string;
 };
 
 type RouteLink = {
