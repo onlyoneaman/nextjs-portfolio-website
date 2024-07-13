@@ -1,6 +1,6 @@
 ---
 title: 'Kay AI'
-description: 'Hire AI Co-workers for Submissions'
+description: 'Building AI Co-workers for Insurance Brokerages and Agencies.'
 date: '2024-4-10'
 tags: ['Work', 'AI']
 techStack: ['React', 'AI', 'Tailwind CSS', 'Python', 'Playwright']

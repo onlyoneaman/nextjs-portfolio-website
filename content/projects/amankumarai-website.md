@@ -1,6 +1,6 @@
 ---
 title: 'amankumar.ai Website | Aman Kumar'
-description: 'Personal website of Aman Kumar, a software engineer, and a tech enthusiast.'
+description: 'My Personal websiter'
 date: '2024-07-11'
 tags: ["Personal"]
 techStack: ['React', "NextJS", "TailwindCSS", "ShadCN"]
