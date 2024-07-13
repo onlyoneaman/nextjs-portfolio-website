@@ -1,4 +1,5 @@
 import {JSX} from "react";
+import {TravelStatus} from "@/types/enums.ts";
 
 type Experience = {
   date: string;
