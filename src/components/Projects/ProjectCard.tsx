@@ -23,12 +23,14 @@ const ProjectCard = ({item}: ProjectCardProps) => {
           <div
             className="flex flex-col justify-between gap-1"
           >
-            <h2 className="font-semibold text-white leading-none">
-              {item.title}
-            </h2>
-            <h4 className="text-xs line-clamp-2">
-              {item.description}
-            </h4>
+            <div className={"space-y-1"}>
+              <h2 className="font-semibold text-white leading-none">
+                {item.title}
+              </h2>
+              <h4 className="text-xs line-clamp-2">
+                {item.description}
+              </h4>
+            </div>
 
             {
               item.link && (
