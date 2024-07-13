@@ -1,91 +1,11 @@
 import React from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
-import ReactMarkdown from 'react-markdown';
-import {getSortedPostsData, getPostData} from '@/lib/projects';
-import ProjectCard from "@/components/Projects/ProjectCard";
-import {Button} from "@/components/ui/button";
+import {getPostData, getSortedPostsData} from '@/lib/projects';
 import SEO from "@/components/SEO.tsx";
 import {Project} from "@/types";
-import {getStyles} from "@/helpers/styleFunctions.ts";
-
-type ProjectsPostProps = {
-  post: Project
-}
-
-const ProjectsPost = ({post}: ProjectsPostProps) => {
-
-  return (
-    <div className="mx-auto mt-4 space-y-3">
-      <h1 className="text-3xl font-bold text-white">
-        {post.title}
-      </h1>
-      <h3 className="text-xl text-zinc-400">
-        {post.description}
-      </h3>
-      {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
-      {
-        post.image && (
-          <img
-            src={post.image}
-            alt={post.title}
-            className="min-w-full h-96 object-cover rounded-md"
-          />
-        )
-      }
-
-      <div className="prose prose-invert prose-lg py-5">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
-      </div>
-
-      <div
-        className="flex space-x-4"
-      >
-        {
-          post.link && post.label && (
-            <Link
-              href={post.link}
-              target={"_blank"}
-            >
-              <Button
-                className={getStyles("primary")}
-              >
-                {post.label || "Link"}
-              </Button>
-            </Link>
-          )
-        }
-
-        {
-          post.secondaryLink && post.secondaryLabel && (
-            <Link
-              href={post.secondaryLink}
-              target={"_blank"}
-            >
-              <Button
-                className={getStyles("secondary")}
-              >
-                {post.secondaryLabel}
-              </Button>
-            </Link>
-          )
-        }
-      </div>
-    </div>
-  )
-};
-
-type ProjectsPostListProps = {
-  posts: Project[]
-}
-
-const ProjectsPostList = ({posts}: ProjectsPostListProps) => (
-  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-    {posts.map((post: Project) => (
-      <ProjectCard key={post.slug} item={post}/>
-    ))}
-  </div>
-);
+import ProjectsPost from "@/components/Projects/ProjectsPost.tsx";
+import ProjectsList from "@/components/Projects/ProjectsList.tsx";
 
 type ProjectPageProps = {
   posts: Project[]
@@ -116,7 +36,7 @@ const ProjectPage = ({posts, post}: ProjectPageProps) => {
             <p className="text-zinc-400 mb-8">
               Playground - Small MVP to Production Apps
             </p>
-            <ProjectsPostList posts={posts}/>
+            <ProjectsList minimized posts={posts}/>
           </>
         )}
       </div>

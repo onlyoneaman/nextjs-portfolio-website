@@ -36,7 +36,7 @@ const BlogPage = ({posts, post}: BlogsPageProps) => {
             <p className="text-zinc-400 mb-8">
               A collection of blog posts about web development, programming, and more.
             </p>
-            <BlogPostList posts={posts}/>
+            <BlogPostList posts={posts} minimized/>
           </>
         )}
       </div>
