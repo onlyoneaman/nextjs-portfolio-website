@@ -2,13 +2,13 @@ import React from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 import {getSortedPostsData, getPostData} from '@/lib/blogs';
-import BlogCard from '@/components/Blogs/BlogCard';
 import Image from "next/image";
 import {Button} from "@/components/ui/button.tsx";
 import SEO from "@/components/SEO.tsx";
 import ReactMarkdown from "react-markdown";
 import {Blog} from "@/types";
 import {getStyles} from "@/helpers/styleFunctions.ts";
+import BlogPostList from "@/components/Blogs/BlogPostList.tsx";
 
 type BlogPostProps = {
   post: Blog;
@@ -57,18 +57,6 @@ const BlogPost = ({post}: BlogPostProps) => (
         )
       }
     </div>
-  </div>
-);
-
-type BlogPostListProps = {
-  posts: Blog[];
-};
-
-const BlogPostList = ({posts}: BlogPostListProps) => (
-  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-    {posts.map((post: Blog) => (
-      <BlogCard key={post.slug} post={post}/>
-    ))}
   </div>
 );
 

@@ -5,11 +5,27 @@ import {Blog} from "@/types";
 
 type BlogPostListProps = {
   posts: Blog[];
+  minimized?: boolean;
 };
 
-const BlogPostList = ({posts}: BlogPostListProps) => {
+const BlogPostList = (
+  {
+    posts,
+    minimized = false
+  }: BlogPostListProps
+) => {
   if (!posts || posts.length === 0) {
     return <p>No blog posts found.</p>;
+  }
+
+  if(minimized) {
+    return (
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post: Blog) => (
+          <BlogCard key={post.slug} post={post}/>
+        ))}
+      </div>
+    )
   }
 
   return (
