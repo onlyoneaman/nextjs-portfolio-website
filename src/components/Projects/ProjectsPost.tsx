@@ -27,6 +27,7 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
       >
         {post.techStack?.map((tag, index) => (
           <Badge
+            className="text-black"
             key={tag}
             variant={"secondary"}
           >
