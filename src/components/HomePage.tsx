@@ -33,19 +33,28 @@ const HomePage = () => {
         className="text-md tracking-wider font-light space-y-3 md:space-y-5"
       >
         <p>
-          A Full-Stack Dev and AI Enthusiast, I have built multiple products in past 5 years, latest being an LLMOps
-          Platform. Raised $100K for Engagebud.
-          Currently I am working as a Founding Engineer at <a href={"https://kay.ai"} target={"_blank"}>Kay.ai</a> building workflow
-          automation for insurance brokers.
-          <br />
+          Hard-Working, Ambitious, and a Fast Learner. I am a Full-Stack Developer and AI Enthusiast.
+        </p>
+        <p className="space-x-1">
+          <span>
+            Currently I am working as a Founding Engineer at
+          </span>
+          <a className="underline" href={"https://kay.ai"} target={"_blank"}>Kay.ai</a>
+          <span>
+            building workflow automation for insurance brokers.
+          </span>
+          <br/>
         </p>
 
         <p>
-          I have worked with startups in US, India.
-          <br />
+          I have built multiple products in past 5 years.
+          Raised $100K funding for my startup Dreamboat.ai, built Engagebud, Influencerbit.
+        </p>
+
+        <p>
           I help starups and businesses built their web applications and apps. As a Full Stack Developer, I can build
           you product from scratch or help you with your existing product.
-          <br />
+          <br/>
           Reachout to me if this is something you are looking for.
         </p>
 
