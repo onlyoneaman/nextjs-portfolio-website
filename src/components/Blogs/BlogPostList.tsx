@@ -41,7 +41,7 @@ const BlogPostList = (
         className="text-blue-500">Medium</a> profile.
       </p>
       <div
-        className="grid grid-cols-2 min-w-full gap-1"
+        className="grid grid-cols-1 sm:grid-cols-2 min-w-full gap-1"
       >
         {posts.map((post: Blog) => {
           if (post.hidden) return null;
