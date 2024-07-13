@@ -18,6 +18,7 @@ type Project = {
   secondaryLink?: string;
   secondaryLabel?: string;
   content: string;
+  highlight?: string;
 }
 
 export type {

@@ -13,11 +13,16 @@ type ProjectsPostProps = {
 const ProjectsPost = ({post}: ProjectsPostProps) => {
 
   return (
-    <div className="mx-auto mt-2 space-y-3">
+    <div className="mx-auto space-y-3">
       <h1 className="text-3xl font-bold text-white">
         {post.title}
       </h1>
-      <h3 className="text-xl text-zinc-400">
+
+      <h2 className="text-xl text-zinc-200">
+        {post.highlight}
+      </h2>
+
+      <h3 className="text-lg text-zinc-400">
         {post.description}
       </h3>
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}

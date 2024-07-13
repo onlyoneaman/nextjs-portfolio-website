@@ -20,7 +20,8 @@ const ProjectCard = ({item}: ProjectCardProps) => {
     slug,
     label,
     secondaryLabel,
-    secondaryLink
+    secondaryLink,
+    highlight
   } = item;
   const secondaryButton = secondaryLink && secondaryLabel;
 
@@ -57,6 +58,15 @@ const ProjectCard = ({item}: ProjectCardProps) => {
               <h2 className="font-semibold text-white leading-none line-clamp-1">
                 {title}
               </h2>
+              {
+                highlight && (
+                  <h3
+                    className="text-xs text-zinc-200 line-clamp-1"
+                  >
+                    {highlight}
+                  </h3>
+                )
+              }
               <h4 className="text-xs line-clamp-2">
                 {description}
               </h4>
