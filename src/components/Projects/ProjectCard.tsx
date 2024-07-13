@@ -49,11 +49,11 @@ const ProjectCard = ({item}: ProjectCardProps) => {
                 </Button>
 
                 <div
-                  className="flex gap-1"
+                  className="flex gap-1 overflow-hidden"
                 >
                   {item.tags?.map((tag, index) => (
                     <span
-                      className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
+                      className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full line-clamp-1"
                       key={tag}
                     >
                       {tag}
