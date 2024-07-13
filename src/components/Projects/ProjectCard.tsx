@@ -12,59 +12,57 @@ type ProjectCardProps = {
 const ProjectCard = ({item}: ProjectCardProps) => {
   return (
     <Link href={`/projects/${item.slug}`}>
-      <Card className="bg-transparent border-transparent text-oldsilver hover:border-zinc-800 min-w-full">
+      <Card
+        className="bg-transparent border-transparent text-oldsilver hover:border-zinc-800 min-w-full h-full"
+      >
         <CardHeader
-          className="flex flex-row p-2 gap-4"
+          className="p-2 flex flex-col h-full justify-between gap-1"
         >
-          <img
-            src={item.image}
-            alt={item.title}
-            className="max-w-32 min-w-32 sm:max-w-52 sm:min-w-52 h-24 sm:h-32 object-cover rounded-md"
-          />
-          <div
-            className="flex flex-col justify-between gap-1"
-          >
-            <div className={"space-y-1"}>
-              <h2 className="font-semibold text-white leading-none line-clamp-1">
-                {item.title}
-              </h2>
-              <h4 className="text-xs line-clamp-2">
-                {item.description}
-              </h4>
-
-              <div
-                className="flex gap-1"
-              >
-                {item.tags?.map((tag, index) => (
-                  <span
-                    className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
-                    key={tag}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {
-              item.link && (
-                <div>
-                  <Button
-                    size={"sm"}
-                    className="text-white hover:text-zinc-400"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (item.link) {
-                        window.open(item.link, "_blank");
-                      }
-                    }}
-                  >
-                    {item.label || "Visit"}
-                  </Button>
-                </div>
-              )
-            }
+          <div className={"space-y-2"}>
+            <img
+              className="max-h-24 w-full sm:max-h-36 md:max-h-48 object-cover rounded-md"
+              src={item.image}
+              alt={item.title}
+            />
+            <h2 className="font-semibold text-white leading-none line-clamp-1">
+              {item.title}
+            </h2>
+            <h4 className="text-xs line-clamp-2">
+              {item.description}
+            </h4>
           </div>
+
+          {
+            item.link && (
+              <div className="flex flex-row items-center gap-2">
+                <Button
+                  size={"sm"}
+                  className="text-white hover:text-zinc-400 h-6"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (item.link) {
+                      window.open(item.link, "_blank");
+                    }
+                  }}
+                >
+                  {item.label || "Visit"}
+                </Button>
+
+                <div
+                  className="flex gap-1"
+                >
+                  {item.tags?.map((tag, index) => (
+                    <span
+                      className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
+                      key={tag}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )
+          }
         </CardHeader>
       </Card>
     </Link>

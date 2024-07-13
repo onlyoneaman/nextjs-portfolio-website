@@ -30,7 +30,7 @@ const ProjectsList = (
 
   return (
     <div
-      className="mx-auto sm:w-[80%] space-y-6"
+      className="mx-auto space-y-5"
     >
       <ContainerTitle
         title="Projects"
@@ -39,7 +39,7 @@ const ProjectsList = (
         Playground - Small MVP to Production Apps
       </p>
       <div
-        className="flex min-w-full flex-col gap-4"
+        className="min-w-full grid grid-cols-1 sm:grid-cols-2 gap-4"
       >
         {posts.map((post: Project) => (
           <ProjectCard key={post.slug} item={post} />
