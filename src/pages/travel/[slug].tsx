@@ -2,12 +2,10 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
-import { getSortedTravelData, getTravelData } from '@/lib/travels';
-import TravelCard from "@/components/Travels/TravelCard";
-import { Button } from "@/components/ui/button";
+import { getSortedTravelsData, getTravelData } from '@/lib/travels';
+import TravelCard from "@/components/Travel/TravelCard.tsx"
 import SEO from "@/components/SEO";
-import { Travel } from "@/types";
-import { getStyles } from "@/helpers/styleFunctions";
+import { Travel } from "@/types/travel.ts";
 
 type TravelPostProps = {
   travel: Travel
@@ -89,7 +87,7 @@ const TravelPage = ({ travels, travel }: TravelPageProps) => {
 };
 
 export async function getStaticPaths() {
-  const travels = getSortedTravelData();
+  const travels = getSortedTravelsData();
   const paths = travels.map((travel) => ({
     params: { slug: travel.slug },
   }));
@@ -103,7 +101,7 @@ export async function getStaticProps({ params }: any) {
     return { props: { travel } };
   }
 
-  const travels = getSortedTravelData();
+  const travels = getSortedTravelsData();
   return { props: { travels } };
 }
 

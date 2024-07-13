@@ -18,7 +18,6 @@ type TravelHomeProps = {
 }
 
 const TravelHome = ({ allTravelData }: TravelHomeProps) => {
-  console.log(allTravelData);
   const completedTrips = allTravelData.filter(trip => trip.status === 'done');
   const plannedTrips = allTravelData.filter(trip => trip.status === 'Planning');
 
