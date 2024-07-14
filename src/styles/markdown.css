@@ -66,4 +66,14 @@
     & img {
         @apply my-4 rounded;
     }
+
+    .tag {
+        color: #3490dc;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .tag:hover {
+        text-decoration: none;
+    }
 }

@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import React from 'react';
+import React, {useEffect} from 'react';
 import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
 import moment from "moment";
 
@@ -16,7 +16,19 @@ interface Props {
   thoughts: Thought[];
 }
 
+const processTags = () => {
+  const contentElements = document.querySelectorAll('.prose');
+  contentElements.forEach(content => {
+    content.innerHTML = content.innerHTML.replace(/#\[\[([^\]]+)\]\]/g, '<a href="#" class="tag">$1</a>');
+    content.innerHTML = content.innerHTML.replace(/#(\w+)/g, '<a href="#" class="tag">$1</a>');
+  });
+};
+
 const ThoughtsPage: React.FC<Props> = ({ thoughts }) => {
+  useEffect(() => {
+    processTags();
+  }, [thoughts])
+
   return (
     <div className="flex flex-col space-y-6">
       <ContainerTitle title={"Thoughts"} />
