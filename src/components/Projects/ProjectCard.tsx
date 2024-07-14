@@ -29,8 +29,6 @@ const ProjectCard = ({item}: ProjectCardProps) => {
     switch (status) {
       case "active":
         return "bg-green-200";
-      case "archived":
-        return "bg-red-200";
       default:
         return "bg-gray-500";
     }
