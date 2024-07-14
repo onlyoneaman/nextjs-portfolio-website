@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { RouteLink } from "@/types";
 import routeLinks from "@/data/routeLinks.tsx";
+import {sendEvent} from "@/scripts/GoogleAnalytics.tsx";
 
 const RouteButtons = ({ isMobile = false }) => {
   const router = useRouter();
@@ -33,7 +34,12 @@ const RouteButtons = ({ isMobile = false }) => {
             key={index}
             href={link.path}
             onClick={() => {
-              // sendGAEvent({ event: 'buttonClicked', value: 'routeButton', label: link.name });
+              sendEvent({
+                action: "click",
+                category: "navigation",
+                label: link.name,
+                value: link.path,
+              });
             }}
           >
             <span key="icon">{link.icon}</span>

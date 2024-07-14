@@ -1,6 +1,18 @@
 import React from 'react';
 import Script from 'next/script';
 
+export const sendEvent = ({action, category, label, value}) => {
+  if (process.env.NODE_ENV !== 'production') {
+    return;
+  }
+
+  (window as any).gtag('event', action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  });
+}
+
 const GoogleAnalytics = () => {
   if (process.env.NODE_ENV !== 'production') {
     return null;
