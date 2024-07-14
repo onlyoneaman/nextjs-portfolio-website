@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { RouteLink } from "@/types";
 import routeLinks from "@/data/routeLinks.tsx";
-import { sendGAEvent } from "@next/third-parties/google";
 
 const RouteButtons = ({ isMobile = false }) => {
   const router = useRouter();
@@ -34,7 +33,7 @@ const RouteButtons = ({ isMobile = false }) => {
             key={index}
             href={link.path}
             onClick={() => {
-              sendGAEvent({ event: 'buttonClicked', value: 'routeButton', label: link.name });
+              // sendGAEvent({ event: 'buttonClicked', value: 'routeButton', label: link.name });
             }}
           >
             <span key="icon">{link.icon}</span>
