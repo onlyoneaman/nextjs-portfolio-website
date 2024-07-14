@@ -17,7 +17,16 @@ const BlogPost = ({post}: BlogPostProps) => {
   return (
     <div className="mt-2 text-oldsilver space-y-5">
       <div className="space-y-1">
-        <h1 className="text-3xl font-bold text-white">{post.title}</h1>
+        <h1 className="text-xl md:text-3xl font-bold text-white">{post.title}</h1>
+
+        <h3 className="text-md md:text-lg text-zinc-200">
+          {post.highlight}
+        </h3>
+
+        <h4 className="text-sm md:text-md">
+          {post.description}
+        </h4>
+
         <div
           className="space-x-2"
         >
