@@ -22,7 +22,7 @@ const ProjectPage = ({posts, post}: ProjectPageProps) => {
   return (
     <>
       <SEO title={post.title}/>
-      <div className="container mx-auto max-w-2xl px-4 py-8">
+      <div className="container mx-auto max-w-2xl px-2 md:px-4 py-5 md:py-8">
         <Link
           className="hover:tracking-wide hover:underline transition-colors mb-4 inline-block"
           href="/projects"

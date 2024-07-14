@@ -28,7 +28,7 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
 
       <div
-        className="flex gap-1"
+        className="flex flex-wrap gap-1"
       >
         {post.techStack?.map((tag, index) => (
           <Badge
@@ -46,7 +46,7 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
           <img
             src={post.image}
             alt={post.title}
-            className="min-w-full h-96 object-cover rounded-md"
+            className="min-w-full h-48 sm:h-64 md:h-96 object-cover rounded-md"
           />
         )
       }

@@ -22,7 +22,7 @@ const BlogPage = ({posts, post}: BlogsPageProps) => {
   return (
     <>
       <SEO title={post.title}/>
-      <div className="container px-4 py-8 max-w-2xl mx-auto">
+      <div className="container px-2 md:px-4 py-5 md:py-8 max-w-2xl mx-auto">
         <Link
           className="text-gray-500 hover:tracking-wider hover:text-gray-300 transition-colors mb-4 inline-block"
           href="/blogs"
