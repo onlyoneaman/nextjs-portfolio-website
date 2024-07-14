@@ -1,7 +1,19 @@
 import React from 'react';
 import Script from 'next/script';
 
-export const sendEvent = ({action, category, label, value}) => {
+export const sendEvent = (
+  {
+    action,
+    category,
+    label,
+    value
+  }: {
+    action: string;
+    category: string;
+    label: string;
+    value: string;
+  }
+) => {
   if (process.env.NODE_ENV !== 'production') {
     return;
   }
