@@ -30,13 +30,13 @@ const ThoughtsPage: React.FC<Props> = ({ thoughts }) => {
   }, [thoughts])
 
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-3 md:space-y-6">
       <ContainerTitle title={"Thoughts"} />
       <p>
         A log of my thoughts, sorted by date.
       </p>
       <main
-        className="w-full max-w-4xl space-y-4"
+        className="w-full max-w-4xl space-y-2 md:space-y-4"
       >
         {thoughts.map((thought, index) => (
           <div

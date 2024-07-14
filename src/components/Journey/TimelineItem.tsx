@@ -22,7 +22,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
   } = item;
 
   return (
-    <div className="bg-slate p-6 rounded-lg shadow-md relative text-md">
+    <div className="bg-slate p-4 md:p-6 rounded-lg shadow-md relative text-md">
       <span
         className="text-xs bg-oldsilver text-white px-3 py-1 rounded-full absolute top-0 left-0 transform -translate-y-1/2"
       >
@@ -73,7 +73,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
           )}
         </div>
         <div
-          className="text-xs text-gray-300 space-x-1"
+          className="text-xs text-gray-300 flex flex-wrap gap-1 items-center"
         >
           <span>
             Tech Stack:

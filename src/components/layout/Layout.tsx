@@ -31,7 +31,7 @@ function Layout({children}: LayoutProps) {
           <AvatarBox/>
         </header>
       )}
-      <div className={`flex-1 flex flex-col ${isMobile ? '' : 'ml-60'}`}>
+      <div className={`flex flex-1 flex-col justify-between ${isMobile ? '' : 'ml-60'}`}>
         {!isMobile && <Sider/>}
         <Container isMobile={isMobile}>
           {children}

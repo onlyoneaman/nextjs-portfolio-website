@@ -31,7 +31,7 @@ const BlogPostList = (
 
   return (
     <div
-      className="mx-auto space-y-6"
+      className="mx-auto space-y-2 sm:space-y-3 md:space-y-5"
     >
       <ContainerTitle
         title="Pensieve"
@@ -42,7 +42,7 @@ const BlogPostList = (
         className="text-blue-500">Medium</a> profile.
       </p>
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 min-w-full gap-1"
+        className="grid grid-cols-1 sm:grid-cols-2 min-w-full gap-2"
       >
         {posts.map((post: Blog) => {
           if (post.hidden) return null;

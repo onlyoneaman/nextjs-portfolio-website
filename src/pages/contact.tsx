@@ -34,7 +34,7 @@ const Contact = () => {
       <SEO
         title={"Contact"}
       />
-      <div className="space-y-6 max-w-4xl mx-auto">
+      <div className="space-y-3 md:space-y-6 max-w-4xl mx-auto">
         <ContainerTitle
           title={"Contact"}
         />

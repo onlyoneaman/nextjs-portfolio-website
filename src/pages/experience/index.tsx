@@ -6,7 +6,7 @@ import TimelineItem from "@/components/Journey/TimelineItem.tsx";
 const JourneyPage: React.FC = () => {
   return (
     <div
-      className="mx-auto space-y-6"
+      className="mx-auto space-y-3 md:space-y-6"
     >
       <ContainerTitle title={"Aman's Journey"} />
       <p>
