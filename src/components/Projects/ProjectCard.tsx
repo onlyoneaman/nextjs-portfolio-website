@@ -49,7 +49,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
           <CardHeader
             className="p-2 flex flex-col h-full justify-between gap-1"
           >
-            <div className={"space-y-2"}>
+            <div className={"space-y-1.5"}>
               <img
                 className="max-h-24 w-full sm:max-h-36 md:max-h-48 object-cover rounded-md"
                 src={image}

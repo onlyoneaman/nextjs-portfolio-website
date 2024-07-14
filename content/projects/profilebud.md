@@ -7,6 +7,7 @@ techStack: ['React', 'Instagram', 'Chrome Extension']
 image: "/content/projects/profilebud-banner.png"
 link: "https://chrome-stats.com/d/geanmonfjnphmeighphheddlmdlcjkho"
 label: "Archive"
+highlight: '$8K MRR | 8K+ Users | 4.5+ Rating'
 status: "archived"
 ---
 

@@ -8,6 +8,7 @@ image: "/content/projects/growpad/banner.png"
 link: "https://chrome-stats.com/d/nbkccjplkaihiekbckmalilcndjhkaff"
 label: "Archive"
 status: "archived"
+highlight: '$3K+ MRR | 2K+ Users | 4.7+ Rating'
 ---
 
 ## Chrome extension | Grew to $3k MRR | Shut Down

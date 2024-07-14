@@ -4,6 +4,7 @@ description: 'Auto Skip Intro, Recaps and Next Episode for Prime , Netflix and H
 date: '2022-3-19'
 tags: ['Personal', 'Chrome Extension']
 techStack: ['Chrome Extension', 'JavaScript', 'HTML', 'CSS']
+highlight: '259+ Users | 4.5+ Rating'
 image: "/content/projects/ott-skip.png"
 link: "https://chrome-stats.com/d/dempbimengdgfdahpccphckokknnappl"
 secondaryLink: "https://github.com/onlyoneaman/auto-skip-for-netflix-and-prime"
