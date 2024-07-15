@@ -19,7 +19,7 @@ const SEO: React.FC<SEOProps> = (
 ) => {
 
   if(!title) {
-    title = "Aman's Mind Map | Ai-Engineer"
+    title = "Aman's Mind Map | AI Engineer & Full Stack Developer"
   } else {
     title = `${title} | Aman's Mind Map`
   }
