@@ -41,9 +41,9 @@ const ThoughtsPage: React.FC<Props> = ({ thoughts }) => {
         {thoughts.map((thought, index) => (
           <div
             key={index}
-            className="p-4 md:p-5 bg-slate rounded-lg shadow-md"
+            className="p-4 md:p-5 bg-slate rounded-lg shadow-md space-y-2"
           >
-            <h2 className="text-sm text-white">
+            <h2 className="text-sm opacity-70">
               {moment(thought.date, "YYYY-MM-DD").format("MMM D, YYYY")}
             </h2>
             <div
