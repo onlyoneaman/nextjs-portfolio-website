@@ -41,11 +41,11 @@ const links: RouteLink[] = [
     name: "Tools",
     icon: <FiTool/>
   },
-  {
-    path: "/thoughts",
-    name: "Thoughts",
-    icon: <IoIosCloudOutline />
-  }
+  // {
+  //   path: "/thoughts",
+  //   name: "Thoughts",
+  //   icon: <IoIosCloudOutline />
+  // }
 ];
 
 export default links;
