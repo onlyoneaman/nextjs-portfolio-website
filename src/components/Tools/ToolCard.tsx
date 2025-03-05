@@ -13,7 +13,9 @@ const ToolCard = ({tool}: ToolCardProps) => {
   return (
     <div
       className="flex cursor-pointer flex-row items-center justify-start space-y-2 p-2 sm:p-3 rounded-md gap-3
-      border-transparent hover:border-white hover:bg-charleston"
+      border border-gray-300 hover:border-oldsilver hover:bg-gray-100
+      dark:border-oldsilver dark:hover:border-white dark:hover:bg-charleston
+      "
       onClick={() => openLink()}
     >
       <img
@@ -22,7 +24,7 @@ const ToolCard = ({tool}: ToolCardProps) => {
         alt={tool.title}
       />
       <div>
-        <h1 className="text-md text-white sm:text-lg">
+        <h1 className="text-md text-primary dark:text-white sm:text-lg">
           {tool.title}
         </h1>
         <p className="text-xs sm:text-sm">

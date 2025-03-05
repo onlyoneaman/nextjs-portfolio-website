@@ -9,7 +9,7 @@ type SiderProps = {
 const Sider = ({isMobile = false}: SiderProps) => {
   if (isMobile) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-slate overflow-x-auto">
+      <div className="fixed bottom-0 left-0 right-0 bg-secondary dark:bg-slate overflow-x-auto">
         <div className="overflow-x-auto">
           <div className="flex whitespace-nowrap p-2">
             <RouteButtons isMobile={true} />
@@ -22,7 +22,7 @@ const Sider = ({isMobile = false}: SiderProps) => {
   }
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-60 px-4 py-6 overflow-y-auto bg-secondary text-black dark:bg-slate">
+    <div className="fixed left-0 top-0 h-screen w-60 px-4 py-6 overflow-y-auto bg-secondary dark:bg-slate">
       <AvatarBox/>
       <RouteButtons/>
       <SocialButtons/>
