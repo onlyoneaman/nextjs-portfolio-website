@@ -15,6 +15,7 @@ const Container = (
     <div
       className={`
         grow p-4 sm:p-6 md:p-9 md:px-12 md:py-32 mx-4 sm:mx-12 lg:mx-24
+        max-w-4xl self-center
         ${isMobile ? 'pt-6' : ''}
       `}
     >
