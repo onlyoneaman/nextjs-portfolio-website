@@ -17,7 +17,11 @@ const CallButton = (
 
   return (
     <button
-      className='bg-white text-black px-3 py-1 rounded-lg shadow-md hover:bg-gray-200 hover:text-gray-900'
+      className='
+      text-white bg-primary hover:bg-gray-500 hover:text-white
+      dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-gray-900
+      px-3 py-1 rounded-lg shadow-md
+      '
       data-cal-link='amankumarai/15min'
     >
       15 minutes call
