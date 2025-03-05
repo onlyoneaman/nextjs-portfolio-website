@@ -22,9 +22,9 @@ const TimelineItem: React.FC<TimelineItemProps> = (
   } = item;
 
   return (
-    <div className="bg-slate p-4 md:p-6 rounded-lg shadow-md relative text-md">
+    <div className="bg-neutral-300 dark:bg-slate p-4 md:p-6 rounded-lg shadow-md relative text-md">
       <span
-        className="text-xs bg-oldsilver text-white px-3 py-1 rounded-full absolute top-0 left-0 transform -translate-y-1/2"
+        className="bg-neutral-400 dark:bg-oldsilver text-primary dark:text-white text-xs px-3 py-1 rounded-full absolute top-0 left-0 transform -translate-y-1/2"
       >
         {date}
       </span>
@@ -38,7 +38,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
           rel={'noopener noreferrer'}
         >
           <h3
-            className="text-md md:text-xl hover:underline text-white font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
+            className="text-primary dark:text-white text-md md:text-xl hover:underline font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             {title}
           </h3>
@@ -73,7 +73,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
           )}
         </div>
         <div
-          className="text-xs py-2 text-gray-300 flex flex-wrap gap-1 items-center"
+          className="text-gray-800 text-xs py-2 dark:text-gray-300 flex flex-wrap gap-1 items-center"
         >
           <span>
             Tech Stack:
@@ -95,7 +95,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
         </div>
       </div>
       <span
-        className="circle w-4 h-4 bg-oldsilver absolute top-0 left-0 transform -translate-x-1/2 rounded-full"
+        className="circle w-4 h-4 bg-neutral-400 dark:bg-oldsilver absolute top-0 left-0 transform -translate-x-1/2 rounded-full"
       />
     </div>
   )
