@@ -12,7 +12,7 @@ const Footer = (
 ) => {
 
   return (
-    <footer className={`flex self-end min-w-full grow p-3 sm:p-5 flex-col border-t-[0.5px] 
+    <footer className={`flex self-end min-w-full p-3 sm:p-5 flex-col border-t-[0.5px] 
     text-gray-700 border-gray-700 dark:text-gray-500
     space-x-3 gap-2 text-xs sm:text-sm max-w-xl md:max-w-4xl mx-auto
     ${isMobile ? "mb-20" : ""}
