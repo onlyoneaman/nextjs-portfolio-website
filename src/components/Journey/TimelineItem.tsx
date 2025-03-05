@@ -73,7 +73,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
           )}
         </div>
         <div
-          className="text-xs text-gray-300 flex flex-wrap gap-1 items-center"
+          className="text-xs py-2 text-gray-300 flex flex-wrap gap-1 items-center"
         >
           <span>
             Tech Stack:

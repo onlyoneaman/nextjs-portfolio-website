@@ -35,7 +35,7 @@ const Footer = (
     max-w-xl md:max-w-4xl mx-auto
     ${isMobile ? "mb-20" : ""}
     `}>
-      <div className="flex justify-between items-center pt-4">
+      <div className="flex justify-between items-center">
         <div className="flex items-center">
           {/*<span className="text-blue-400 mr-2">Currently</span>*/}
           <Link

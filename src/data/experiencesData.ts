@@ -6,14 +6,14 @@ const experiencesData: Experience[] = [
     title: 'Founding Product Engineer at KAY.AI',
     role: "Founding Product Engineer",
     companyName: "kay.ai",
-    description: 'Building workflow automation tool for financial institutions, leading product.',
+    description: 'Building Operator for Insurance Industry, leading Frontend and UX.',
     website: 'https://kay.ai',
     fullLogo: '/images/companies/kay.png',
-    techStack: ["ReactJs", "Typescript", "TailwindCSS", "AWS", "ShadCN", "Python", "Playwright"],
+    techStack: ["ReactJs", "Typescript", "TailwindCSS", "AWS", "ShadCN", "Python", "Playwright", "LLM"],
     points: [
-      'Building the next-gen automation tool for Commercial Insurance Brokerages.',
-      'Leading Frontend and UX.',
-      'Built working prototype in 7 days for demos.',
+      'Leading UI/UX for Copilot to automate insurance workflows',
+      'Built the Kay Admin App, Client App, and Demo Instance for seamless AI-driven automation.',
+      'Experimenting with emerging AI models, techniques and UX paradigms to enhance usability and system design.',
     ],
   },
   {
@@ -21,16 +21,14 @@ const experiencesData: Experience[] = [
     title: 'Co-Founder / CTO at DreamboatAI',
     role: "Co-Founder / CTO",
     companyName: "DreamboatAI",
-    description: 'Designed and developed LLMOps Platform, built multiple LLM apps, created proxy middleware.',
+    description: 'Designed and developed LLMOps Platform, built multiple LLM apps.',
     website: 'https://dreamboat.ai',
     fullLogo: '/images/companies/dreamboatai.png',
     techStack: ["ReactJs", "Typescript", "Rails", "Node", "AWS", "Cloudflare", "TimescaleDB", "Redis", "PostgreSQL"],
     points: [
-      'Led the team for the design and development of LLMOps Platform to help monitor, manage, and debug LLM apps.',
-      'Built a proxy middleware using Cloudflare Workers achieving under 20ms latency.',
-      'Built multiple LLM Apps for experimentation.',
-      'Developed Divedash - Chrome Extension that suggests Prompt Templates for ChatGPT.',
-      'Developed Almada - LinkedIn Icebreaker Generator using LinkedIn URL.'
+      'Led the team for design and development of LLMOps Platform to help monitor, manage, and debug LLM apps following Agile Principles.',
+      'Built a high-performance proxy middleware using Cloudflare Workers, achieving sub-20ms response times.',
+      'Created multiple LLM-Powered Apps: Divedash - Chrome extension suggesting prompt templates for ChatGPT. Almada - Linkedin Icebreaker generator from profile URLs.',
     ],
   },
   {
@@ -43,10 +41,11 @@ const experiencesData: Experience[] = [
     fullLogo: '/images/companies/engagebud.png',
     techStack: ["ReactJs", "Typescript", "Rails", "PostgreSQL", "Javascript"],
     points: [
-      'Led the team to design and develop the full stack of Influencerbit - Customer Led Influencer Marketing Platform for E-Commerce Brands.',
-      'Built Engagebud - Gamification Platform for E-Com Brands.',
-      'Developed specialized, customizable software solutions balancing technical complexity with brand-specific adaptability.',
-      'Managed server which handled 11M+ users and oversaw the creation of 5M+ discount codes.',
+      'Led the team to develop Influencerbit - Customer Led Influencer Marketing Platform for E-Commerce Brands.',
+      'Built Engagebud - Gamification Platform for Ecommerce.',
+      'Scaled backend to handle 13M+ users and generated 6M+ discount codes',
+      'Raised $100K funding from Upekkha, a SaaS accelerator.',
+      'Developed highly customizable software, balancing performance and adaptability.'
     ],
   },
   {
@@ -56,6 +55,7 @@ const experiencesData: Experience[] = [
     companyName: "ProfileBud",
     description: 'Led frontend development, created payment and admin portals, developed GoLang server.',
     website: 'https://profilebud.com',
+    fullLogo: '/images/companies/profilebud.png',
     techStack: ["ReactJs", "Rails", "GoLang", "Gatsby", "Javascript"],
     points: [
       'Led the frontend development for the company as one of the founding members.',
