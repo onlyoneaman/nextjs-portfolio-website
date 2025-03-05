@@ -2,7 +2,7 @@
     @apply max-w-none;
 
     & h1, & h2, & h3, & h4 {
-        @apply text-white;
+        @apply text-primary dark:text-white;
     }
 
     & h1 {
@@ -46,7 +46,7 @@
     }
 
     & code {
-        @apply bg-gray-100 px-1 py-0.5 rounded;
+        @apply bg-gray-500 dark:bg-gray-100 px-1 py-0.5 rounded;
     }
 
     & table {
@@ -54,13 +54,12 @@
         border-collapse: collapse;
     }
 
-    & th,
-    & td {
+    & th, & td {
         @apply border px-4 py-2;
     }
 
     & th {
-        @apply bg-gray-100 font-semibold;
+        @apply bg-gray-500 dark:bg-gray-100 font-semibold;
     }
 
     & img {
@@ -68,12 +67,6 @@
     }
 
     .tag {
-        color: #3490dc;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    .tag:hover {
-        text-decoration: none;
+        @apply text-[#3490dc] underline cursor-pointer hover:no-underline;
     }
 }
