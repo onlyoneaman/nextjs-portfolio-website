@@ -1,26 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import ThemeToggle from "@/components/layout/ThemeToggle.tsx";
-
-const LiveTime = () => {
-  const [currentTime, setCurrentTime] = useState('');
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
-  return (
-    <div className="text-md sm:text-lg text-primary dark:text-white font-light w-28">
-      {currentTime}
-    </div>
-  );
-};
+import LiveTime from "@/components/layout/Footer/LiveTime.tsx";
 
 type FooterProps = {
   isMobile: boolean;
