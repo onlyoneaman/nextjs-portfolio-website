@@ -51,7 +51,7 @@ const Footer = (
             Made by Aman |
           </span>
           <span>
-            2024 amankumar.ai
+            © {new Date().getFullYear()}
           </span>
         </div>
 
