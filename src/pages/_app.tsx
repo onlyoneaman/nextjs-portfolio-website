@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <GoogleAnalytics />
       <ThemeProvider
         attribute='class'
-        defaultTheme='dark'
+        defaultTheme='light'
         enableSystem
         disableTransitionOnChange
       >
