@@ -10,7 +10,7 @@ const HomePage = () => {
 
   return (
     <div
-      className="sm:w-[80%] mx-auto space-y-8"
+      className="pl-12 sm:p-0 sm:max-w-[80%] space-y-8"
     >
       <div className="space-y-3">
         <ContainerTitle
