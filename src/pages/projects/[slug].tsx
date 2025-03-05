@@ -33,7 +33,7 @@ const ProjectPage = ({posts, post}: ProjectPageProps) => {
           <ProjectsPost post={post}/>
         ) : (
           <>
-            <p className="text-zinc-400 mb-8">
+            <p className="text-gray-200 dark:text-zinc-400 mb-8">
               Playground - Small MVP to Production Apps
             </p>
             <ProjectsList minimized posts={posts}/>

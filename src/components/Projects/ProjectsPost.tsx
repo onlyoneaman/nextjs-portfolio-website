@@ -14,15 +14,15 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
 
   return (
     <div className="mx-auto space-y-3">
-      <h1 className="text-3xl font-bold text-white">
+      <h1 className="text-primary dark:text-white text-3xl font-bold">
         {post.title}
       </h1>
 
-      <h2 className="text-xl text-zinc-200">
+      <h2 className="text-xl dark:text-zinc-200 text-slate">
         {post.highlight}
       </h2>
 
-      <h3 className="text-lg text-zinc-400">
+      <h3 className="text-lg dark:text-zinc-400 text-zinc-500">
         {post.description}
       </h3>
       {/*<p className="text-zinc-400 mb-4">{post.date}</p>*/}
