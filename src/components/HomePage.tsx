@@ -32,34 +32,76 @@ const HomePage = () => {
       <div
         className="text-md tracking-wider font-light space-y-3 md:space-y-5"
       >
-        <p>
-          Hard-Working, Ambitious, and a Fast Learner. I am a Full-Stack Developer and AI Enthusiast.
+        <p className='space-x-1'>
+          <span className='text-white'>
+            Full-Stack and AI Enthusiast.
+          </span>
+          <span>
+            Hard-Working, Ambitious, and a Fast Learner.
+          </span>
         </p>
-        <p className="space-x-1">
+        <div className="space-x-1">
           <span>
             Currently I am working as a Founding Engineer at
           </span>
-          <a className="underline" href={"https://kay.ai"} target={"_blank"}>Kay.ai</a>
+          <a
+            className="underline text-white hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg"
+            href={"https://kay.ai"}
+            target={"_blank"}
+          >
+            kay.ai
+          </a>
           <span>
-            building workflow automation for insurance brokers.
+            building Operator for Insurance Industry.
           </span>
           <br/>
-        </p>
+        </div>
 
-        <p>
-          I have built multiple products in past 5 years.
-          Raised $100K funding for my startup Dreamboat.ai, built Engagebud, Influencerbit.
-        </p>
+        <div className='space-x-1'>
+          <span>
+            I have built multiple products in past 5 years.
+          </span>
+          <a
+            className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+            href='https://www.crunchbase.com/organization/engagebud'
+            target='_blank'
+          >
+            Raised $100K funding
+          </a>
+          <p>
+            for my startup
+            <a
+              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              href='https://dreamboat.ai/'
+              target='_blank'
+            >
+              Dreamboat.ai,
+            </a>
+            built
+            <a
+              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              href='https://engagebud1.webflow.io/'
+              target='_blank'
+            >
+              Engagebud,
+            </a>
+            <a
+              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              href='https://influencerbit.com/'
+              target='_blank'
+            >
+              Influencerbit.
+            </a>
+          </p>
+        </div>
 
-        <p>
-          I help starups and businesses built their web applications and apps. As a Full Stack Developer, I can build
-          you product from scratch or help you with your existing product.
-          <br/>
-          Reachout to me if this is something you are looking for.
-        </p>
-
-        <p>
-          You can talk to me about AI, new ideas, life, or anything else.
+        <p className='space-x-1'>
+          <span>
+            You can talk to me about
+          </span>
+          <span className='text-white'>
+            AI, new ideas, life, or anything else.
+          </span>
         </p>
       </div>
 

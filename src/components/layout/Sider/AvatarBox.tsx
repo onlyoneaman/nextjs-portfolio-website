@@ -27,15 +27,16 @@ const AvatarBox = () => {
       <div
         className="text-sm flex flex-col"
       >
-        <span className="text-white">
+        <span className="text-white md:text-lg">
           Aman Kumar
         </span>
         <span>
           <Typewriter
             words={[
               "AI Engineer",
+              "Dev Stallion",
               "Problem Solver",
-              "FullStack Dev"
+              "FullStack"
             ]}
             loop
             cursor
