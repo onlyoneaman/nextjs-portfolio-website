@@ -29,7 +29,7 @@ const BlogCard = ({post}: BlogCardProps) => {
         whileTap={{ scale: 0.95 }}
       >
         <Card
-          className="text-oldsilver bg-transparent border-transparent hover:border-zinc-800 min-w-full h-full"
+          className='bg-neutral-200 dark:bg-slate border-none text-gray-800 dark:text-white hover:border-zinc-800 min-w-full h-full'
         >
           <CardHeader
             className="flex flex-col p-2 gap-2"
@@ -46,10 +46,10 @@ const BlogCard = ({post}: BlogCardProps) => {
             <div
               className="flex flex-col gap-1"
             >
-              <h2 className="font-semibold text-white line-clamp-1">
+              <h2 className="text-primary dark:text-white font-semibold line-clamp-1">
                 {title}
               </h2>
-              <h3 className="text-sm text-zinc-200 line-clamp-1">
+              <h3 className="text-gray-800 dark:text-zinc-400 text-sm line-clamp-1">
                 {highlight}
               </h3>
               <h4 className="text-xs line-clamp-2">
@@ -57,11 +57,11 @@ const BlogCard = ({post}: BlogCardProps) => {
               </h4>
 
               <div
-                className="flex gap-2 items-center justify-between text-xs text-zinc-400"
+                className="flex gap-2 items-center justify-between text-xs text-zinc-700 dark:text-zinc-400"
               >
-              <span>
-                {moment(date).format("MMM DD, YYYY")}
-              </span>
+                <span>
+                  {moment(date).format("MMM DD, YYYY")}
+                </span>
                 <span
                   className="bg-zinc-800 text-white rounded-md px-2 py-1"
                 >

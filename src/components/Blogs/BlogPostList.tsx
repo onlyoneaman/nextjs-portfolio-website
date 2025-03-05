@@ -39,10 +39,10 @@ const BlogPostList = (
       <p className="">
         A collection of thoughts, ideas, and musings. You can check more of my writings on my <a
         href="https://onlyoneaman.medium.com" target="_blank" rel="noopener noreferrer"
-        className="text-blue-500">Medium</a> profile.
+        className="text-blue-500 hover:underline">Medium</a> profile.
       </p>
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 min-w-full gap-2"
+        className="grid grid-cols-1 sm:grid-cols-2 min-w-full gap-4 md:gap-6"
       >
         {posts.map((post: Blog) => {
           if (post.hidden) return null;

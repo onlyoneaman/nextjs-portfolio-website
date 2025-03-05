@@ -47,7 +47,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
         whileTap={{scale: 0.95}}
       >
         <Card
-          className="bg-neutral-200 dark:bg-slate border-transparent text-gray-800 dark:text-white hover:border-zinc-800 w-full h-full"
+          className="bg-neutral-200 dark:bg-slate border-none text-gray-800 dark:text-white hover:border-zinc-800 w-full h-full"
         >
           <CardHeader
             className="p-2 flex flex-col h-full justify-between gap-1"
