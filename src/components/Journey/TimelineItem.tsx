@@ -38,7 +38,7 @@ const TimelineItem: React.FC<TimelineItemProps> = (
           rel={'noopener noreferrer'}
         >
           <h3
-            className="text-primary dark:text-white text-md md:text-xl hover:underline font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
+            className="text-primary dark:text-white text-md md:text-lg lg:text-xl hover:underline font-semibold mt-2 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             {title}
           </h3>
@@ -53,13 +53,13 @@ const TimelineItem: React.FC<TimelineItemProps> = (
             )
           }
         </a>
-        <p className="">
+        <p className="text-sm sm:text-md">
           {description}
         </p>
         <div>
           {points && (
             <ul
-              className="list-disc list-inside mt-2"
+              className="text-sm sm:text-md list-disc list-inside mt-2"
             >
               {points.map((point, index) => (
                 <li

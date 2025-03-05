@@ -36,7 +36,7 @@ const BlogPostList = (
       <ContainerTitle
         title="Pensieve"
       />
-      <p className="">
+      <p className="text-sm sm:text-md">
         A collection of thoughts, ideas, and musings. You can check more of my writings on my <a
         href="https://onlyoneaman.medium.com" target="_blank" rel="noopener noreferrer"
         className="text-blue-500 hover:underline">Medium</a> profile.

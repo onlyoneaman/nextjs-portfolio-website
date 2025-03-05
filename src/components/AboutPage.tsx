@@ -25,7 +25,7 @@ const AboutPage = () => {
         />
 
         <div
-          className="text-md space-y-2"
+          className="text-sm sm:text-md space-y-2"
         >
           <p>
             Hello! I am Aman, based out of Bengaluru and I enjoy creating things that make life easier for people.
