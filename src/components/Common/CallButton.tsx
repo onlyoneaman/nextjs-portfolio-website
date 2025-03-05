@@ -1,7 +1,6 @@
-import {Button} from "@/components/ui/button.tsx";
-import Link from "next/link";
 import {CommonButtonProps} from "@/types";
-import {getStyles} from "@/helpers/styleFunctions.ts";
+import { getCalApi } from "@calcom/embed-react";
+import {useEffect} from "react";
 
 const CallButton = (
   {
@@ -9,17 +8,20 @@ const CallButton = (
   }: CommonButtonProps
 ) => {
 
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui");
+    })();
+  }, []);
+
   return (
-    <Link
-      href={'https://cal.com/amankumarai/15min'}
-      target={"_blank"}
+    <button
+      className='bg-white text-black px-3 py-1 rounded-lg shadow-md hover:bg-gray-200 hover:text-gray-900'
+      data-cal-link='amankumarai/15min'
     >
-      <Button
-        className={getStyles(variant)}
-      >
-        15 minutes call
-      </Button>
-    </Link>
+      15 minutes call
+    </button>
   )
 };
 
