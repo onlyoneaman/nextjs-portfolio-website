@@ -22,7 +22,7 @@ const ThemeToggle = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className='text-primary dark:text-oldsilver'
+          className='text-primary dark:text-oldsilver border-none focus:border-none active:border-none'
           variant="secondary"
           size="icon"
         >
