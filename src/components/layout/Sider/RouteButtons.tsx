@@ -22,10 +22,11 @@ const RouteButtons = ({ isMobile = false }) => {
               flex items-center cursor-pointer rounded-md text-sm
               ${isMobile
               ? "flex-col p-2 min-w-[60px] justify-center"
-              : "border px-3 py-2 gap-2 hover:text-white justify-start"
+              : "border px-3 py-2 gap-2 justify-start " +
+              "dark:hover:text-white hover:text-black hover:bg-gray-200 dark:hover:bg-transparent "
             }
               ${active
-              ? "bg-charleston text-white border-[#393939]"
+              ? "dark:bg-charleston dark:text-white dark:border-[#393939] bg-primary text-white border-primary"
               : isMobile
                 ? ""
                 : "border-transparent"
