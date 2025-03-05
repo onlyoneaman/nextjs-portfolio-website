@@ -36,7 +36,7 @@ const HomePage = () => {
         className="text-md tracking-wider font-light space-y-3 md:space-y-5"
       >
         <p className='space-x-1'>
-          <span className='text-primary dark:text-white'>
+          <span className='text-primary font-medium dark:font-normal dark:text-white'>
             Full-Stack and AI Enthusiast.
           </span>
           <span>
@@ -102,7 +102,7 @@ const HomePage = () => {
           <span>
             You can talk to me about
           </span>
-          <span className='text-white'>
+          <span className='text-primary font-medium dark:font-normal dark:text-white'>
             AI, new ideas, life, or anything else.
           </span>
         </p>
