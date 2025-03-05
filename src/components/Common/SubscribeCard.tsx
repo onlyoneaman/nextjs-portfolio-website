@@ -31,7 +31,7 @@ const SubscribeCard = () => {
         className="space-y-1"
       >
         <h3
-          className="text-md font-bold text-white"
+          className="text-md font-bold text-primary dark:text-white"
         >
           {"Stay up to date"}
         </h3>
@@ -58,14 +58,12 @@ const SubscribeCard = () => {
             onSubmit={onSubmit}
           >
             <Input
-              className="w-full border-none bg-slate"
               name="email"
               type="email"
               placeholder="Your email"
               required
             />
             <Button
-              className="hover:text-white hover:bg-slate"
               type="submit"
             >
               {"Subscribe"}

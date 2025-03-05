@@ -56,18 +56,18 @@ const Contact = () => {
             success ? (
               <>
                 <h3
-                  className="text-xl font-bold text-white"
+                  className="text-xl font-bold text-primary dark:text-white"
                 >
                   {"Thanks for reaching out!"}
                 </h3>
-                <p>
+                <p className='text-primary dark:text-white'>
                   {"I'll get back to you as soon as possible."}
                 </p>
               </>
             ) : (
               <>
                 <h3
-                  className="text-xl font-bold text-white"
+                  className="text-xl font-bold text-primary dark:text-white"
                 >
                   Send a message
                 </h3>
@@ -82,7 +82,6 @@ const Contact = () => {
                   >
                     <div>
                       <Input
-                        className="border-none bg-slate"
                         type="text"
                         placeholder="Name"
                         required={true}
@@ -91,7 +90,6 @@ const Contact = () => {
                     </div>
                     <div>
                       <Input
-                        className="border-none bg-slate"
                         type="email"
                         placeholder="Email"
                         required={true}
@@ -102,7 +100,7 @@ const Contact = () => {
 
                   <div>
                     <Textarea
-                      className="border-none bg-slate h-32"
+                      className="h-32"
                       placeholder="Message"
                       required={true}
                       name={"message"}
@@ -111,7 +109,7 @@ const Contact = () => {
 
                   <div>
                     <Button
-                      className="w-full hover:text-white hover:bg-slate"
+                      className="w-full text-white hover:text-white hover:bg-slate"
                     >
                       Send Now
                     </Button>
