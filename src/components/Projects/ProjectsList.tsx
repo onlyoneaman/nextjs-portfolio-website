@@ -40,7 +40,7 @@ const ProjectsList = (
         Playground - Small MVP to Production Apps
       </p>
       <div
-        className="min-w-full grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4"
+        className="min-w-full grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6"
       >
         {posts.map((post: Project) => (
           <ProjectCard

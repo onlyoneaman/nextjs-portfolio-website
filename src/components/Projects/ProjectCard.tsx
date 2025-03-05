@@ -30,8 +30,13 @@ const ProjectCard = ({item}: ProjectCardProps) => {
       case "active":
         return "bg-green-200";
       default:
-        return "bg-gray-500";
+        return "bg-gray-300 dark:bg-gray-500";
     }
+  }
+
+  const buttonProps: any = {
+    size: "sm",
+    className: "text-white dark:text-white hover:text-white dark:hover:text-zinc-400 h-6",
   }
 
   return (
@@ -42,7 +47,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
         whileTap={{scale: 0.95}}
       >
         <Card
-          className="bg-transparent border-transparent text-oldsilver hover:border-zinc-800 w-full h-full"
+          className="bg-neutral-200 dark:bg-slate border-transparent text-gray-800 dark:text-white hover:border-zinc-800 w-full h-full"
         >
           <CardHeader
             className="p-2 flex flex-col h-full justify-between gap-1"
@@ -53,13 +58,13 @@ const ProjectCard = ({item}: ProjectCardProps) => {
                 src={image}
                 alt={title}
               />
-              <h2 className="font-semibold text-white leading-none line-clamp-1">
+              <h2 className="text-primary dark:text-white font-semibold leading-none line-clamp-1">
                 {title}
               </h2>
               {
                 highlight && (
                   <h3
-                    className="text-xs text-zinc-200 line-clamp-1"
+                    className="text-zinc-700 dark:text-zinc-200 text-xs line-clamp-1"
                   >
                     {highlight}
                   </h3>
@@ -70,14 +75,13 @@ const ProjectCard = ({item}: ProjectCardProps) => {
               </h4>
             </div>
 
-            <div className="space-y-1">
+            <div className="space-y-3">
               <div className="flex flex-row items-center justify-between gap-2">
                 <div className="space-x-2">
                   {
                     link && (
                       <Button
-                        size={"sm"}
-                        className="text-white hover:text-zinc-400 h-6"
+                        {...buttonProps}
                         onClick={(e) => {
                           e.preventDefault();
                           if (link) {
@@ -93,8 +97,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
                   {
                     secondaryButton && (
                       <Button
-                        size={"sm"}
-                        className="text-white hover:text-zinc-400 h-6"
+                        {...buttonProps}
                         onClick={(e) => {
                           e.preventDefault();
                           if (secondaryLink) {
@@ -127,7 +130,7 @@ const ProjectCard = ({item}: ProjectCardProps) => {
                 >
                   {tags?.map((tag, index) => (
                     <span
-                      className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full line-clamp-1"
+                      className="bg-zinc-100 text-primary dark:bg-zinc-800 dark:text-white text-xs px-2 py-0.5 rounded-full line-clamp-1"
                       key={tag}
                     >
                       {tag}
