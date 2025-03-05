@@ -24,7 +24,7 @@ const BlogPage = ({posts, post}: BlogsPageProps) => {
       <SEO title={post.title}/>
       <div className="container px-2 md:px-4 py-5 md:py-8 max-w-2xl mx-auto">
         <Link
-          className="text-gray-500 hover:tracking-wider hover:text-gray-300 transition-colors mb-4 inline-block"
+          className="hover:tracking-wide hover:underline transition-colors mb-4 inline-block"
           href="/blogs"
         >
           ← All Articles
@@ -33,7 +33,7 @@ const BlogPage = ({posts, post}: BlogsPageProps) => {
           <BlogPost post={post}/>
         ) : (
           <>
-            <p className="text-zinc-400 mb-8">
+            <p className="text-gray-200 dark:text-zinc-400 mb-8">
               A collection of blog posts about web development, programming, and more.
             </p>
             <BlogPostList posts={posts} minimized/>
