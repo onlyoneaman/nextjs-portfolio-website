@@ -5,7 +5,8 @@ import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
 
 const HomePage = () => {
 
-  const linkClassname = 'text-primary dark:text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg';
+  const linkClassname = 'text-primary dark:text-white underline hover:bg-gray-200 hover:text-gray-900 dark:hover:text-primary' +
+    ' p-1 rounded-lg';
 
   return (
     <div
