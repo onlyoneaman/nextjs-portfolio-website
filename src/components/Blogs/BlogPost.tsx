@@ -15,17 +15,19 @@ const BlogPost = ({post}: BlogPostProps) => {
   const readingResult = readingTime(post.content);
 
   return (
-    <div className="mt-2 text-oldsilver space-y-5">
+    <div className="mx-auto space-y-5">
       <div className="space-y-1">
-        <h1 className="text-xl md:text-3xl font-bold text-white">{post.title}</h1>
+        <h1 className="text-primary dark:text-white text-3xl font-bold">
+          {post.title}
+        </h1>
 
-        <h3 className="text-md md:text-lg text-zinc-200">
+        <h2 className="text-md dark:text-zinc-200 text-slate">
           {post.highlight}
-        </h3>
+        </h2>
 
-        <h4 className="text-sm md:text-md">
+        <h3 className="md:text-lg dark:text-zinc-400 text-zinc-500">
           {post.description}
-        </h4>
+        </h3>
 
         <div
           className="space-x-2"
