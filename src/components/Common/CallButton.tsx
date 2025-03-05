@@ -11,7 +11,7 @@ const CallButton = (
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
-      cal("ui");
+      cal("ui", {});
     })();
   }, []);
 

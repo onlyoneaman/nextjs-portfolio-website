@@ -22,7 +22,7 @@ const Sider = ({isMobile = false}: SiderProps) => {
   }
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-60 px-4 py-6 overflow-y-auto bg-secondary dark:bg-slate">
+    <div className="fixed left-0 top-0 h-screen w-60 px-4 py-12 space-y-4 overflow-y-auto bg-secondary dark:bg-slate">
       <AvatarBox/>
       <RouteButtons/>
       <SocialButtons/>
