@@ -60,7 +60,7 @@ const ProjectsPost = ({post}: ProjectsPostProps) => {
       >
         {post.tags?.map((tag, index) => (
           <span
-            className="text-xs bg-zinc-800 text-white px-2 py-0.5 rounded-full"
+            className="text-xs bg-zinc-800 text-white px-3 py-0.5 rounded-full"
             key={tag}
           >
             {tag}
