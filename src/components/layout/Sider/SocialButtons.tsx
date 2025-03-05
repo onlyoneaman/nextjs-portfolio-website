@@ -23,7 +23,7 @@ const SocialButtons = (
                 flex items-center cursor-pointer rounded-md text-sm
                 ${isMobile
                 ? "flex-col p-2 min-w-[60px] justify-center"
-                : "px-1 py-1.5 hover:text-white transition-colors duration-200"
+                : "px-1 py-1.5 hover:text-black hover:underline dark:hover:text-white transition-colors duration-200"
               }
               `}
               href={socialLink.link}
