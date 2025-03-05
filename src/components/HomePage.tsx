@@ -5,6 +5,8 @@ import ContainerTitle from "@/components/Common/ContainerTitle.tsx";
 
 const HomePage = () => {
 
+  const linkClassname = 'text-primary dark:text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg';
+
   return (
     <div
       className="sm:w-[80%] mx-auto space-y-8"
@@ -14,7 +16,7 @@ const HomePage = () => {
           title="Hey, I'm Aman"
         />
         <h2
-          className="text-3xl md:text-5xl font-medium text-white"
+          className="text-3xl md:text-5xl font-medium text-primary dark:text-white"
         >
           I love to{" "}
           <span
@@ -33,7 +35,7 @@ const HomePage = () => {
         className="text-md tracking-wider font-light space-y-3 md:space-y-5"
       >
         <p className='space-x-1'>
-          <span className='text-white'>
+          <span className='text-primary dark:text-white'>
             Full-Stack and AI Enthusiast.
           </span>
           <span>
@@ -45,7 +47,7 @@ const HomePage = () => {
             Currently I am working as a Founding Engineer at
           </span>
           <a
-            className="underline text-white hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg"
+            className={linkClassname}
             href={"https://kay.ai"}
             target={"_blank"}
           >
@@ -62,7 +64,7 @@ const HomePage = () => {
             I have built multiple products in past 5 years.
           </span>
           <a
-            className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+            className={linkClassname}
             href='https://www.crunchbase.com/organization/engagebud'
             target='_blank'
           >
@@ -71,7 +73,7 @@ const HomePage = () => {
           <p>
             for my startup
             <a
-              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              className={linkClassname}
               href='https://dreamboat.ai/'
               target='_blank'
             >
@@ -79,14 +81,14 @@ const HomePage = () => {
             </a>
             built
             <a
-              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              className={linkClassname}
               href='https://engagebud1.webflow.io/'
               target='_blank'
             >
               Engagebud,
             </a>
             <a
-              className='text-white underline hover:bg-gray-200 hover:text-gray-900 p-1 rounded-lg'
+              className={linkClassname}
               href='https://influencerbit.com/'
               target='_blank'
             >

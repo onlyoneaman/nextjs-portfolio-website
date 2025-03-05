@@ -27,7 +27,7 @@ const AvatarBox = () => {
       <div
         className="text-sm flex flex-col"
       >
-        <span className="text-white md:text-lg">
+        <span className="text-black dark:text-white md:text-lg">
           Aman Kumar
         </span>
         <span>

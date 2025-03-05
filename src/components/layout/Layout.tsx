@@ -25,7 +25,7 @@ function Layout({children}: LayoutProps) {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-primary text-oldsilver">
+    <div className="flex flex-col min-h-screen bg-white text-primary dark:bg-primary dark:text-oldsilver">
       {isMobile && (
         <header className="bg-slate z-10 p-4">
           <AvatarBox/>

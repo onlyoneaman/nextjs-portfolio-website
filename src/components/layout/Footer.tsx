@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
+import ThemeToggle from "@/components/layout/ThemeToggle.tsx";
 
 const LiveTime = () => {
   const [currentTime, setCurrentTime] = useState('');
@@ -31,8 +32,9 @@ const Footer = (
 
   return (
     <footer className={`flex self-end min-w-full grow p-3 sm:p-5 flex-col border-t-[0.5px] 
-    text-gray-500 border-gray-700 space-x-3 gap-2 text-xs sm:text-sm
-    max-w-xl md:max-w-4xl mx-auto
+    text-gray-500 border-gray-700 
+    light:text-white
+    space-x-3 gap-2 text-xs sm:text-sm max-w-xl md:max-w-4xl mx-auto
     ${isMobile ? "mb-20" : ""}
     `}>
       <div className="flex justify-between items-center">
@@ -55,7 +57,10 @@ const Footer = (
           </span>
         </div>
 
-        <LiveTime />
+        <div className='flex items-center gap-3'>
+          <ThemeToggle />
+          <LiveTime />
+        </div>
       </div>
     </footer>
   );
