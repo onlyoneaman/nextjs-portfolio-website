@@ -1,10 +1,10 @@
 ---
-title: 'minidev.tools'
+title: 'tools'
 description: 'Open source collection of mini dev tools. No Ads, No Complex UI, Simple and Efficient UI.'
 date: '2024-05-10'
 tags: ['Personal']
 techStack: ['React', 'Next.js', 'Tailwind CSS']
-link: 'https://minidev.tools'
+link: 'https://tools.amankumar.ai'
 label: 'Visit'
 secondaryLink: 'https://github.com/onlyoneaman/minidev-tools'
 secondaryLabel: 'GitHub'
